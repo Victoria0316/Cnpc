@@ -1,0 +1,78 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="crop__bar_height">56dp</dimen>
+    <dimen name="common_padding_middle">10dp</dimen>
+    <dimen name="common_padding_big">15dp</dimen>
+    <dimen name="common_padding_small">5dp</dimen>
+    <dimen name="common_margin">10dp</dimen>
+    <dimen name="common_margin_little">5dp</dimen>
+    <dimen name="common_margin_big">15dp</dimen>
+
+
+    <dimen name="common_TitleRight_26px">13sp</dimen>
+    <dimen name="common_TitleLeft_30px">15sp</dimen>
+    <dimen name="common_titlebar_search_hint">13sp</dimen>
+    <dimen name="common_Title_40px">20sp</dimen>
+    <dimen name="common_hint_26px">13sp</dimen>
+    <dimen name="common_button_blue_32px">16sp</dimen>
+    <dimen name="common_annotation_28px">14sp</dimen>
+    <dimen name="common_blue_border_24px">12sp</dimen>
+    <dimen name="common_blue_border_28px">14sp</dimen>
+    <dimen name="common_bottom_big_34px">17sp</dimen>
+    <dimen name="common_bottom_small_22px">11sp</dimen>
+    <dimen name="common_annotation_small_18px">9sp</dimen>
+    <dimen name="common_small_20px">10sp</dimen>
+    <dimen name="common_big_number_38px">19sp</dimen>
+    <dimen name="common_big_settlement_36px">18sp</dimen>
+    <dimen name="common_card_integral_32px">16sp</dimen>
+    <dimen name="common_card_integral_76px">38sp</dimen>
+    <dimen name="common_card_integral_22px">11sp</dimen>
+    <dimen name="common_title_template_26px">13sp</dimen>
+    <dimen name="common_title_symbol_16px">8sp</dimen>
+
+    <!--登录-->
+    <dimen name="Login_left">50dp</dimen>
+    <dimen name="Login_bottom">40dp</dimen>
+    <!--忘记密码-->
+    <dimen name="hint_left">84dp</dimen>
+
+    <!--软件分享-->
+    <dimen name="marginTop">23dp</dimen>
+    <dimen name="marginBottom">18dp</dimen>
+    <dimen name="spacing">12dp</dimen>
+    <dimen name="integral_right">25dp</dimen>
+
+    <!--个人中心-->
+    <dimen name="mine_marginText">7dp</dimen>
+    <dimen name="mine_paddingBottom">40dp</dimen>
+    <dimen name="mine_item_height">44dp</dimen>
+    <dimen name="mine_item_margin_left">80dp</dimen>
+    <dimen name="dialog_margin_top">40dp</dimen>
+    <dimen name="mine_vehicle_edit_item_h">40dp</dimen>
+    <dimen name="mine_dialog_padding_left">55dp</dimen>
+    <dimen name="mine_bonus_padding_bottom">8dp</dimen>
+
+    <!--首页-->
+    <dimen name="home_center_top">64dp</dimen>
+    <dimen name="home_mt">13dp</dimen>
+    <dimen name="home_vt">40dp</dimen>
+    <dimen name="round_top">30dp</dimen>
+    <dimen name="round_right">30dp</dimen>
+    <dimen name="round_right_f">35dp</dimen>
+    <dimen name="e_marginRight">100dp</dimen>
+    <dimen name="oil_marginTop">60dp</dimen>
+    <dimen name="f_marginTop">145dp</dimen>
+    <dimen name="round_marginTop">45dp</dimen>
+    <dimen name="marginLeft">20dp</dimen>
+    <dimen name="marginRight">40dp</dimen>
+    <dimen name="text_right">125dp</dimen>
+    <dimen name="text_left">7dp</dimen>
+    <dimen name="text_top">-5dp</dimen>
+    <dimen name="marquee">135dp</dimen>
+
+    <dimen name="myRound_Height">150dp</dimen>
+    <dimen name="myPage_Top">35dp</dimen>
+
+</resources>

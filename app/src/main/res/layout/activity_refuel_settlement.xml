@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/congratulations_success"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_annotation_28px"
+                android:drawableTop="@drawable/success"
+                android:gravity="center_horizontal"
+                android:drawablePadding="@dimen/common_padding_middle"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginBottom="@dimen/common_padding_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pay_success_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_details"
+                    android:textSize="@dimen/common_title_template_26px"
+                    android:textColor="@color/common_black_light"
+                    android:drawableLeft="@drawable/order_details"
+                    android:drawablePadding="@dimen/common_padding_middle"
+                    android:layout_margin="@dimen/common_padding_middle"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_imaginary_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_number"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_orderNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trading_hours"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_order_success_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/refuel_Purchase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refuel_Purchase"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_toRightOf="@id/refuel_Purchase"/>
+
+                    <TextView
+                        android:id="@+id/label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/val"
+                        android:layout_marginTop="-5dp"
+                        android:text="#"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/refuel_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refuel_price"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:layout_marginLeft="100dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_countMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_toRightOf="@id/amount"/>
+
+                    <TextView
+                        android:id="@+id/tv_oilNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oil_number"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:layout_marginLeft="100dp"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_preferentialAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/actual_amount"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_preferentialAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_payAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refuel_amount"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_payAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_preferentialPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preferential_amount"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_preferentialPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_couponAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coupons"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_couponAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_oilAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Oil_purse"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_oilAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_changeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coin_purse"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_changeAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_actualAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other_pay"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_actualAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_actualPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/actual_pay"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_actualPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_awardedIntegral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/giving_integral"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_awardedIntegral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_availableAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle"
+                    android:layout_marginBottom="@dimen/common_padding_middle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cumulative_integral"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light"
+                        android:layout_marginRight="@dimen/common_padding_small" />
+
+                    <TextView
+                        android:id="@+id/tv_availableAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textSize="@dimen/common_bottom_small_22px"
+                        android:textColor="@color/common_black_light" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_shake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:layout_marginBottom="@dimen/common_padding_middle"
+                android:background="@drawable/forgot_password_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:drawableLeft="@drawable/order_phone"
+                    android:text="@string/shake"
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/common_title_template_26px"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/common_padding_small" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_gray_right"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

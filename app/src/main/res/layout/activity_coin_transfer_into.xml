@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_item_bg"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+
+                <ImageView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_toRightOf="@id/tv_left"
+                    android:text=""
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_annotation_28px" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:background="@drawable/forgot_password_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/title_template"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:text="@string/mine_oilwallet_amount"/>
+
+                <EditText
+                    android:id="@+id/et_transin_price"
+                    style="@style/EditText_hint"
+                    android:hint="@string/hint_price"
+                    android:layout_marginLeft="@dimen/Login_left"
+                    android:digits="1234567890."
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/common_pink"
+                    android:textSize="@dimen/common_hint_26px"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_payment"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_annotation_28px"
+                android:layout_marginLeft="@dimen/common_padding_middle"
+                android:layout_marginTop="@dimen/common_padding_middle"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_template"
+                        android:text="@string/Pay_treasure"
+                        android:drawableLeft="@drawable/zhifb"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/common_padding_middle"
+                        android:background="@drawable/kus"
+                        android:layout_marginLeft="@dimen/common_padding_middle"
+                        android:layout_marginRight="@dimen/common_padding_middle"
+                        android:paddingLeft="@dimen/common_padding_middle" />
+
+                    <TextView
+                        style="@style/title_template"
+                        android:text="@string/WeChat"
+                        android:drawableLeft="@drawable/wexi"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/common_padding_middle"
+                        android:background="@drawable/kus"
+                        android:layout_marginLeft="@dimen/common_padding_middle"
+                        android:layout_marginRight="@dimen/common_padding_middle"
+                        android:paddingLeft="@dimen/common_padding_middle" />
+
+                    <TextView
+                        style="@style/title_template"
+                        android:text="@string/Internet_bank"
+                        android:drawableLeft="@drawable/yinl"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/common_padding_middle"
+                        android:background="@drawable/kus"
+                        android:layout_marginLeft="@dimen/common_padding_middle"
+                        android:layout_marginRight="@dimen/common_padding_middle"
+                        android:paddingLeft="@dimen/common_padding_middle"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/common_padding_middle"
+                    android:paddingRight="@dimen/common_padding_middle"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/pay"
+                        style="@style/radio_btn"
+                        android:layout_weight="1"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/WeChat"
+                        style="@style/radio_btn"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/Internet"
+                        style="@style/radio_btn"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+                </RadioGroup>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/confirm_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_confirm_price"
+                android:textSize="@dimen/common_title_template_26px"
+                android:textColor="@color/common_black"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:layout_marginRight="@dimen/common_padding_middle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/transfer_bg"
+                android:layout_marginLeft="@dimen/common_padding_middle"
+                android:layout_marginRight="@dimen/common_padding_middle"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_oilwallet_transfer_desc_label"
+                    android:textColor="@color/common_pink"
+                    android:textSize="@dimen/common_small_20px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_oilwallet_transfer_desc"
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/common_small_20px"
+                    android:lineSpacingExtra="@dimen/common_padding_middle"
+                    android:layout_marginLeft="@dimen/common_padding_small"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/transfer_in"
+                android:layout_marginTop="@dimen/common_padding_big"
+                style="@style/ButtonBlue"
+                android:text="@string/mine_oilwallet_transfer_in"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

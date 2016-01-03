@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/default_card"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/common_annotation_28px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_blue"
+        android:text="设置为默认加油卡"
+        android:gravity="center"
+        android:background="@drawable/dialog_top_bg"/>
+
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/line">
+
+     </ImageView>
+    <TextView
+        android:id="@+id/del"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/common_annotation_28px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_blue"
+        android:text="删除"
+        android:gravity="center"
+        android:background="@drawable/dialog_mid_bg"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/common_annotation_28px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_blue"
+        android:text="取消"
+        android:gravity="center"
+        android:background="@drawable/dialog_mid_bg"/>
+
+
+
+
+</LinearLayout>

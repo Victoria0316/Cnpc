@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/coupon_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A22-中国石化加油站(浦沿路)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_TitleLeft_30px" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:background="@drawable/coupon_num_bg"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="200元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_blue_border_28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money"
+            android:layout_marginLeft="10dp"
+            android:text="抵用券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_blue_border_28px" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_coupon_num"
+        android:paddingTop="5dp"
+        android:text="APP移动充值油卡优惠活动"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_blue_border_28px" />
+
+
+    <TextView
+        android:id="@+id/tv_avildate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_coupon_num"
+        android:text="有效日期："
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@id/activity"/>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_avildate"
+        android:text="2015-5-22——2015-6-30"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@id/activity"/>
+
+    <TextView
+        android:id="@+id/below_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_coupon_num"
+        android:text="最低消费金额："
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@id/tv_avildate"/>
+
+
+    <TextView
+        android:id="@+id/min_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/below_price"
+        android:text="XXX元"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@+id/tv_avildate"/>
+
+    <TextView
+        android:id="@+id/oil_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_coupon_num"
+        android:text="限制油站："
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@+id/below_price"/>
+
+
+    <TextView
+        android:id="@+id/oil_limit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/oil_limit"
+        android:text="XXXX"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_below="@+id/below_price"/>
+
+</RelativeLayout>

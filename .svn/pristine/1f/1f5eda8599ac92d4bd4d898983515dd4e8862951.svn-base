@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+        <!--android:id="@+id/plv_refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:cacheColorHint="@android:color/white"-->
+        <!--android:divider="@null"-->
+        <!--android:layout_above="@+id/btn_add"-->
+        <!--android:dividerHeight = "10dp"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--android:scrollbars="none">-->
+    <!--</com.handmark.pulltorefresh.library.PullToRefreshListView>-->
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/common_transparent"
+        android:cacheColorHint="@color/common_transparent"
+        android:divider="@color/common_bg_gray"
+        android:dividerHeight="@dimen/common_margin"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/btn_add"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_margin"
+        />
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/ButtonBlue"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginRight="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:text="新增开票信息"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+     />
+
+
+
+</RelativeLayout>

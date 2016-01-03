@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:paddingLeft="@dimen/common_padding_middle"
+    android:paddingRight="@dimen/common_padding_middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/success_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_middle"
+            android:src="@drawable/success"/>
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Registered_successfully"
+            android:textSize="@dimen/common_hint_26px"
+            android:textColor="@color/common_black"
+            android:layout_toRightOf="@id/success_image"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/success"
+            android:text="@string/welcome"
+            android:textSize="@dimen/common_hint_26px"
+            android:textColor="@color/common_black"
+            android:layout_alignBottom="@id/success_image"
+            android:layout_toRightOf="@id/success_image"
+            android:gravity="bottom"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/annotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annotation"
+        android:textColor="@color/common_black"
+        android:lineSpacingExtra="@dimen/common_padding_middle"
+        android:textSize="@dimen/common_blue_border_24px"
+        android:layout_marginBottom="@dimen/marginBottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/integral_card"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/invitation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invitation"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_card_integral_32px"
+            android:paddingRight="@dimen/common_padding_big"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/immediately"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invitation"
+            android:layout_marginTop="@dimen/spacing"
+            android:layout_alignLeft="@id/invitation"
+            android:text="@string/immediately"
+            android:textColor="@color/crop__button_text"
+            android:textSize="@dimen/common_card_integral_22px"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/immediately"
+            android:layout_alignLeft="@id/immediately"
+            android:layout_marginTop="@dimen/spacing"
+            android:text="100"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_card_integral_76px"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/number"
+            android:text="@string/integral"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_card_integral_22px"
+            android:paddingRight="@dimen/integral_right"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/annotation_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:padding="@dimen/common_padding_middle"
+        android:background="@drawable/annotation_background"
+        android:lineSpacingExtra="@dimen/common_padding_small"
+        android:text="@string/annotation_explain"
+        android:textSize="@dimen/common_annotation_small_18px"
+        android:textColor="@color/crop__button_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/invitation_button"
+            style="@style/ButtonBlue"
+            android:text="@string/invitation_button"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

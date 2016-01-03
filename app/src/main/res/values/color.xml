@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--公共字体颜色 common  -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="common_bg">#f9f9f9</color>
+    <color name="common_white">#FFF5FE</color>
+    <color name="common_InputBox">#979797</color>
+    <color name="common_gray">#979797</color>
+    <color name="common_divider">#DDDDDD</color>
+    <color name="common_blue">#129CD0</color>
+    <color name="common_blue_center">#66b9e5</color>
+    <color name="common_blue_cen">#78cdf7</color>
+    <color name="common_red">#FF3A2E</color>
+    <color name="common_red_Statistical">#FF0415</color>
+    <color name="common_black">#323232</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="common_grey_hint">#c9c9c9</color>
+    <color name="common_pink">#df2a49</color>
+    <color name="common_text_hint">#aaaaaa</color>
+    <color name="common_bg_gray">#F9F9F9</color>
+
+    <color name="common_black_light">#555555</color>
+
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <color name="text_light_blue">#129cd0</color>
+    <color name="text_light_black">#555555</color>
+    <color name="text">#999999</color>
+
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <color name="yellow">#DCDD53</color>
+
+    <color name="text_blue">#324D97</color>
+
+    <!--版本更新  start-->
+    <color name="btntextcolor">#ff1E90FF</color>
+    <color name="transparent">#00000000</color>
+    <!--dialog中按钮字体颜色 -->
+    <color name="dialog_btn_press">#EAEAEA</color>
+
+    <!--版本更新  end-->
+
+
+</resources>

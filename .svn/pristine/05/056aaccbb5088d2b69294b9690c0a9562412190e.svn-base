@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/transfer"
+            style="@style/btn_blue"
+            android:layout_marginRight="@dimen/common_margin_big"
+            android:text="@string/mine_pre_gas_transfer" />
+
+        <TextView
+            android:id="@+id/order_back"
+            style="@style/btn_blue"
+            android:text="@string/mine_pre_gas_order_back" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/btn_ll"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/info_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/common_margin">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_padding_middle"
+                    android:drawableLeft="@drawable/order_details"
+                    android:drawablePadding="@dimen/common_padding_middle"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_details"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_title_template_26px" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_imaginary_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_middle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/order_number"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/order_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123452362752823425"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/trading_hours"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/transfer_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_type"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  "
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_unit_price"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_unit_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.10"
+                        android:textColor="@color/common_red"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元/吨"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_left_volume"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_left_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_cur_amount"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_cur_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/common_red"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_storage"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_pre_unit_price"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_pre_unit_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_pre_amount"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_pre_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_fee"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-05-05  14:00:00"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_big"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_padding_small"
+                        android:text="@string/mine_pre_gas_statistics"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_gas_statistics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:textColor="@color/common_blue"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/common_black_light"
+                        android:textSize="@dimen/common_bottom_small_22px" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/table_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_ll"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_time"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mine_pre_gas_title_time"
+                    android:textColor="@color/common_blue" />
+
+                <TextView
+                    android:id="@+id/title_type"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mine_pre_gas_title_type"
+                    android:textColor="@color/common_blue"
+
+                    />
+
+                <TextView
+                    android:id="@+id/title_volume"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="吨"
+                    android:textColor="@color/common_blue"
+
+                    />
+
+                <TextView
+                    android:id="@+id/title_yuan"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mine_pre_gas_title_yuan"
+                    android:textColor="@color/common_blue"
+
+                    />
+
+            </LinearLayout>
+
+
+            <com.bluemobi.cnpc.view.CustomListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_ll"
+                android:layout_below="@id/table_title"
+                android:cacheColorHint="@color/common_transparent"
+                android:divider="@color/common_divider"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/common_transparent"
+                android:background="@color/white"
+                >
+
+            </com.bluemobi.cnpc.view.CustomListView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

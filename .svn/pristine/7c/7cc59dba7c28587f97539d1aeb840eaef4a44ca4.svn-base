@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="cnpcdb">
+
+    </dbname>
+
+    <version value="1">
+
+    </version>
+
+    <list>
+        <mapping class="com.bluemobi.cnpc.db.entity.DbVersion">
+
+        </mapping>
+        <mapping class="com.bluemobi.cnpc.db.entity.CityListDetail">
+
+        </mapping>
+
+        <mapping class="com.bluemobi.cnpc.db.entity.CarAllListDetail">
+
+        </mapping>
+
+        <mapping class="com.bluemobi.cnpc.db.entity.HotCityListDetail">
+
+        </mapping>
+
+
+    </list>
+</litepal>

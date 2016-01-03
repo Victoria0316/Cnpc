@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/forgot_password_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/et_telNo"
+            style="@style/EditText_hint"
+            android:hint="@string/edt_phone"
+            android:phoneNumber="true"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:maxLength="11"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forgot_password_bg"
+        android:layout_marginTop="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="@string/verification_code"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/et_valNo"
+            style="@style/EditText_hint"
+            android:hint="@string/edt_verification"
+            android:phoneNumber="true"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_getVal"
+            style="@style/border_button_V"
+            android:text="@string/obtain_verification"
+            android:layout_marginRight="@dimen/common_padding_middle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+    <com.bluemobi.cnpc.view.CustomSpinnerOption
+        android:id="@+id/oil_model"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Login_left"
+        android:background="@drawable/forgot_password_bg"
+        android:layout_marginTop="@dimen/common_padding_middle">
+
+    </com.bluemobi.cnpc.view.CustomSpinnerOption>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/forgot_password_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            style="@style/EditText_hint"
+            android:hint="@string/edt_password"
+            android:password="true"
+            android:layout_marginLeft="@dimen/hint_left" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/forgot_password_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="@string/confirm_password" />
+
+        <EditText
+            android:id="@+id/et_pwd_again"
+            style="@style/EditText_hint"
+            android:hint="@string/again_password"
+            android:password="true"
+            android:layout_marginLeft="@dimen/hint_left" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registered_success"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        style="@style/ButtonBlue"
+        android:text="@string/Next"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginRight="@dimen/common_padding_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:drawableLeft="@drawable/selected_button"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/annotation_grey"
+            android:textSize="@dimen/common_annotation_28px"
+            android:textColor="@color/common_grey_hint" />
+
+        <TextView
+            android:id="@+id/registration_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/annotation_blue"
+            android:textSize="@dimen/common_annotation_28px"
+            android:textColor="@color/common_blue" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_big">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gas_bg"
+    android:padding="@dimen/common_padding_big">
+
+
+    <ImageView
+        android:id="@+id/iv_gas_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gas_station" />
+
+
+    <TextView
+        android:id="@+id/deptName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_gas_station"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_toRightOf="@id/iv_gas_station"
+        android:text="石化卡"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_card_integral_32px" />
+
+
+    <TextView
+        android:id="@+id/tv_totoal_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_gas_station"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_toRightOf="@id/iv_gas_station"
+        android:text="油站总部编号:"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_blue_border_24px" />
+
+
+    <TextView
+        android:id="@+id/deptCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_gas_station"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_toRightOf="@id/tv_totoal_num"
+        android:text="A22"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_blue_border_24px" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_cardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_gas_station"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:text="卡号:"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_annotation_28px" />
+
+    <TextView
+        android:id="@+id/tv_cardNo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_gas_station"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:layout_toRightOf="@id/tv_cardNo"
+        android:text="0888888888888"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_annotation_28px" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_residual"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_cardNo"-->
+        <!--android:layout_marginLeft="@dimen/common_padding_big"-->
+        <!--android:layout_marginTop="@dimen/common_padding_big"-->
+        <!--android:text="姓名："-->
+        <!--android:textColor="@color/common_black"-->
+        <!--android:textSize="@dimen/common_hint_26px" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_residual_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_cardNo_text"-->
+        <!--android:layout_marginLeft="@dimen/common_padding_big"-->
+        <!--android:layout_marginTop="@dimen/common_padding_big"-->
+        <!--android:layout_toRightOf="@id/tv_cardNo"-->
+        <!--android:text="张三"-->
+        <!--android:textColor="@color/common_black"-->
+        <!--android:textSize="@dimen/common_hint_26px" />-->
+
+
+    <TextView
+        android:id="@+id/tv_integration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cardNo"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:text="手机号："
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_hint_26px" />
+
+    <TextView
+        android:id="@+id/tv_integration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cardNo_text"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:layout_toRightOf="@id/tv_integration"
+        android:text="124136273457"
+        android:singleLine="true"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_hint_26px" />
+
+
+
+
+
+</RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="核对信息，无误后点击确认绑定加油卡"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/common_blue"
+        android:textSize="@dimen/common_card_integral_22px"
+       />
+
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/common_white"
+        android:textSize="@dimen/common_TitleLeft_30px"
+        android:gravity="center"
+        android:background="@drawable/btn_blue"/>
+
+</LinearLayout>

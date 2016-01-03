@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gas="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:id="@+id/btn_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_bg"
+        android:padding="@dimen/common_margin">
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/common_text"
+            android:layout_marginTop="@dimen/common_margin_little"
+            android:text="@string/global_desc"
+            android:textColor="@color/common_red"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/common_text"
+            android:layout_marginTop="@dimen/common_margin_little"
+            android:layout_toRightOf="@id/label"
+            android:text="@string/mine_pre_auto_transfer"
+            android:textColor="@color/common_black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/submit"
+            style="@style/btn_blue"
+            android:layout_width="match_parent"
+            android:layout_below="@id/label"
+            android:layout_marginTop="@dimen/common_margin_big"
+            android:text="@string/mine_pre_transfer_btn" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_rl"
+
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/time_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin_little"
+                    android:text="2015-1-1  10:12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sel_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_ll"
+                android:background="@drawable/list_item_down"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_margin"
+                    android:text="@string/mine_pre_transfer_gas" />
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/btn_blue"
+                        android:layout_marginBottom="@dimen/common_margin"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:background="@drawable/item_sel">
+
+                        <com.bluemobi.cnpc.view.GasText
+                            android:id="@+id/gas"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/common_margin"
+                            gas:gasStyle="@style/common_text"
+                            gas:text="97" />
+
+                        <TextView
+                            android:id="@+id/gas_price"
+                            style="@style/common_text"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="1"
+                            android:text="6.10元/升" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/btn_blue"
+                        android:visibility="invisible" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/rl_oil_select1"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/oil_type_select"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/gas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92"
+                            android:textColor="@color/common_black_light"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/common_annotation_28px" />
+
+                        <TextView
+                            android:id="@+id/tv_oil_type_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:paddingBottom="10dp"
+                            android:textSize="@dimen/common_annotation_28px"
+                            android:layout_toRightOf="@+id/gas" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/gas_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="5.89元/升"
+                        android:gravity="center_vertical|right"
+                        android:layout_gravity="right|center_vertical"
+                        android:textSize="@dimen/common_annotation_28px" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sel_ll"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/list_item_down">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="@string/mine_pre_transfer_left" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pre_price"
+                            style="@style/common_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/common_margin"
+                            android:gravity="right"
+                            android:text="100元" />
+
+                        <TextView
+                            android:id="@+id/pre_volume"
+                            style="@style/common_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/common_margin"
+                            android:gravity="right"
+                            android:text="57升"
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mine_item_height"
+                    android:background="@drawable/list_item_down">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="@string/mine_pre_transfer_fee" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_transfer_fee"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:text="借用余量" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mine_item_height"
+                    android:background="@drawable/list_item_down">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="@string/mine_pre_transfer_statistics" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_transfer_statistics"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:text="+300元"
+                        android:textColor="@color/common_blue" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mine_item_height"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:background="@drawable/list_item">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="吨数" />
+
+                    <EditText
+                        android:id="@+id/mine_pre_transfer_volume"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:background="@null"
+                        android:hint="请输入转出的吨数"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mine_item_height"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:background="@drawable/list_item">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="@string/mine_pre_transfer_amount" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_transfer_amount"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/mine_pre_transfer"
+                        android:layout_centerVertical="true"
+                        android:text="借用余量"
+                        android:textColor="@color/common_red" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_transfer"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:text="元"
+                        android:textColor="@color/common_red" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mine_item_height"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:background="@drawable/list_item">
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="实际转出金额" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_transfer_actual"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/mine_pre_actual"
+                        android:layout_centerVertical="true"
+                        android:text="借用余量"
+                        android:textColor="@color/common_red" />
+
+                    <TextView
+                        android:id="@+id/mine_pre_actual"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:text="元"
+                        android:textColor="@color/common_red" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

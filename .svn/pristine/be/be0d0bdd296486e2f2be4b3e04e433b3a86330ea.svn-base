@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/collection_bg"
+    android:paddingLeft="@dimen/common_padding_middle"
+    android:paddingRight="@dimen/common_padding_middle">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国石化加油站"
+        android:textSize="@dimen/common_annotation_28px"
+        android:textColor="@color/common_black"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_gray_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+
+
+
+</RelativeLayout>

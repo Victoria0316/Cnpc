@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/search_bg"
+        android:paddingLeft="@dimen/common_padding_middle">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/search"
+        android:background="@null"
+        android:textSize="@dimen/common_titlebar_search_hint"
+        android:textColorHint="@color/white"
+        android:drawablePadding="@dimen/common_padding_small"
+        android:hint="请输入您想查找的加油站"/>
+</RelativeLayout>
+
+
+       <TextView
+           android:id="@+id/iv_home_hint"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           android:layout_marginLeft="@dimen/common_padding_small"
+           android:layout_alignParentRight="true"
+           android:textSize="@dimen/common_TitleLeft_30px"
+           android:textColor="@color/white"
+           android:layout_toRightOf="@id/rl_search"
+           android:singleLine="true"/>
+
+</RelativeLayout>

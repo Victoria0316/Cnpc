@@ -1,0 +1,61 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/ll_wrap_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="@dimen/common_padding_middle"
+            android:paddingLeft="@dimen/common_padding_middle"
+            android:paddingTop="@dimen/common_card_integral_22px"
+            android:singleLine="true"
+            android:text="90#"
+            android:textColor="@color/black">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tv_spinner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:paddingBottom="@dimen/common_padding_middle"
+            android:paddingTop="@dimen/common_card_integral_22px"
+            android:singleLine="true"
+            android:text="关注油品"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="@dimen/common_padding_middle"
+            android:gravity="right"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_arrow" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</merge>

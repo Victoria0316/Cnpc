@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/mine_dialog_padding_left">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_order_date"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/coin_fundin_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_order_num"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/coin_fundin_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="支付类型："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/coin_fundin_order_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_order_transfer_in"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/coin_fundin_transfer_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_red"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

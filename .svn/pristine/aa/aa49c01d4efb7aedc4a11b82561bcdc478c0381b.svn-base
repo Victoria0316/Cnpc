@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <ListView
+        android:id="@+id/lv_all_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:divider="@drawable/line"
+        android:scrollbars="none">
+
+    </ListView>
+
+
+    <com.bluemobi.cnpc.view.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/common_transparent" />
+
+</RelativeLayout>

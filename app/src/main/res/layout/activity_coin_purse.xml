@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <LinearLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_vehicle_edit_item_h"
+            android:background="@drawable/list_item">
+
+            <TextView
+                android:id="@+id/balance_label"
+                style="@style/common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="@string/balance" />
+
+            <TextView
+                android:id="@+id/balance_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/balance_label"
+                android:textSize="@dimen/common_blue_border_28px"
+                android:textColor="@color/common_red"
+                android:layout_marginLeft="@dimen/common_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yeal_sel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_vehicle_edit_item_h"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/list_item">
+
+            <TextView
+                android:id="@+id/yeal_label"
+                style="@style/common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="@string/year" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin"
+                android:src="@drawable/arrow_gray_down" />
+
+            <TextView
+
+                style="@style/common_text"
+                android:id="@+id/year_val"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/yeal_label"
+                android:layout_marginLeft="@dimen/common_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/query_sel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_vehicle_edit_item_h"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/list_item">
+
+            <TextView
+                android:id="@+id/query_label"
+                style="@style/common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="@string/query" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin"
+                android:src="@drawable/arrow_gray_down" />
+
+            <TextView
+                style="@style/common_text"
+                android:id="@+id/query_val"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/query_label"
+                android:layout_marginLeft="@dimen/common_margin" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big">
+
+        <Button
+            android:id="@+id/transfer_come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transfer_btn"
+            android:singleLine="true"
+            android:textSize="@dimen/common_button_blue_32px"
+            android:textColor="@color/common_white"
+            android:text="@string/transfer_come"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:id="@+id/transfer_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transfer_btn"
+            android:singleLine="true"
+            android:textSize="@dimen/common_button_blue_32px"
+            android:textColor="@color/common_white"
+            android:text="@string/transfer_go"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <com.bluemobi.cnpc.view.CnpcStatementsView
+        android:id="@+id/statements"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_ll"
+        android:layout_above="@id/btn_ll"
+        android:layout_marginTop="10dp"></com.bluemobi.cnpc.view.CnpcStatementsView>
+
+
+</RelativeLayout>

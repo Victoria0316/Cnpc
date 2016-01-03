@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/yeal_sel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_vehicle_edit_item_h"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/list_item">
+
+        <TextView
+            android:id="@+id/yeal_label"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:text="@string/year" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:src="@drawable/arrow_gray_down" />
+
+        <TextView
+
+            style="@style/common_text"
+            android:id="@+id/year_val"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/yeal_label"
+            android:layout_marginLeft="@dimen/common_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/query_sel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_vehicle_edit_item_h"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/list_item">
+
+        <TextView
+            android:id="@+id/query_label"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:text="@string/query" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:src="@drawable/arrow_gray_down" />
+
+        <TextView
+            style="@style/common_text"
+            android:id="@+id/query_val"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/query_label"
+            android:layout_marginLeft="@dimen/common_margin" />
+    </RelativeLayout>
+    <com.bluemobi.cnpc.view.CnpcStatementsView
+        android:id="@+id/statements"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_padding_middle">
+    </com.bluemobi.cnpc.view.CnpcStatementsView>
+</LinearLayout>

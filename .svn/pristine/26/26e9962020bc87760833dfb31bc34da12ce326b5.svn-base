@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/common_bg"
+    android:padding="@dimen/common_padding_middle"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_bg_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_name"
+                android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+            <EditText
+                android:id="@+id/et_phoneNum"
+                style="@style/EditText_hint"
+                android:phoneNumber="true"
+                android:inputType="number"
+                android:hint="@string/edt_phone"
+                android:layout_marginLeft="@dimen/Login_left"
+                android:maxLength="11"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/the_divider"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/common_bg_down"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_password"
+                android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/EditText_hint"
+                android:password="true"
+                android:hint="@string/edt_password"
+                android:layout_marginLeft="@dimen/Login_left"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/blueButton"
+        style="@style/ButtonBlue"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:text="@string/Login" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:text="@string/forget_password"
+        android:textSize="@dimen/common_small_20px"
+        android:textColor="@color/common_grey_hint"
+        android:gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="@dimen/Login_bottom">
+
+        <TextView
+            android:id="@+id/registered"
+            style="@style/border_button"
+            android:text="@string/title_registered"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

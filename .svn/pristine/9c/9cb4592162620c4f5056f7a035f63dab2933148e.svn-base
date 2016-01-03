@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shake_bg"
+        android:padding="@dimen/common_padding_middle">
+
+        <ImageButton
+            android:id="@+id/dialog_shake_shut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_shake_shut"
+            android:background="@null"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很遗憾"
+                android:textSize="@dimen/common_annotation_28px"
+                android:textColor="@color/common_black"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dialog_shake_failure"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呀( ⊙ o ⊙ )！没有摇到呢，"
+                android:textSize="@dimen/common_TitleRight_26px"
+                android:textColor="@color/common_black"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一定是摇的姿势不对，"
+                android:textSize="@dimen/common_TitleRight_26px"
+                android:textColor="@color/common_black"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="明天再来试下！"
+                android:textSize="@dimen/common_TitleRight_26px"
+                android:textColor="@color/common_black"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center_horizontal">
+
+            <Button
+                android:id="@+id/again"
+                style="@style/ButtonBlue"
+                android:text="再试一次"
+                android:background="@drawable/dialog_shake_btnbg"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

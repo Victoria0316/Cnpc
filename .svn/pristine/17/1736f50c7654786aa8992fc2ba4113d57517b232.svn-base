@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="cnpc 1.0.0"
+    package="com.bluemobi.cnpc" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme"
+        android:name=".app.CnpcApplication">
+
+   <!--     DEBUG-->
+<!--       <meta-data
+
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="AxeBpuqGpA4Tl2mEOzGaiBfE" />-->
+      <!--  RELEASE-->
+       <meta-data
+
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="TdosB4Qtybv2ahTYlfbEzjfF" />
+
+        <meta-data android:name="TD_APP_ID" android:value="48D4579CA47E7851AD26620666BD2652" />
+        <meta-data android:name="TD_CHANNEL_ID" android:value="Your_channel_id"/>
+
+
+
+        <service android:name="com.bluemobi.cnpc.service.UpdateService" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+
+        <!-- 微信配置 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".base.crop.CropImageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p2 登录-->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p7-->
+        <activity
+            android:name=".activity.CityChangeActivity"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <!--p2_1 注册-->
+        <activity
+            android:name=".activity.RegisteredActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p2_2 注册协议-->
+        <activity
+            android:name=".activity.RegistrationAgreementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p2_3 忘记密码-->
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p2_3 忘记密码2-->
+        <activity
+            android:name=".activity.ForgetPasswordNextActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p2_4 软件分享-->
+        <activity
+            android:name=".activity.SoftwareShareActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AppStartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.MapListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.VehicleListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.ProductSelectionActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".activity.FunctionIntroductionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.PreOrdersForSureActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--        P5_2_1订单结算-->
+        <activity
+            android:name=".activity.OrderAndSettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- P5_2_2预购-提交订单-->
+        <activity
+            android:name=".activity.OrderPaymentSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--P5_3预借升数确定-->
+        <activity
+            android:name=".activity.BorrowOrdersForSureActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--P5_3_1订单结算-->
+        <activity
+            android:name=".activity.BorrowOrderAndSettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--P5_3_2预借-提交订单-->
+        <activity
+            android:name=".activity.BorrowOrderPaymentSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!--p3 首页-->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.VehicleEditActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.VehicleTypeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--p4 充值优惠-->
+        <activity
+            android:name=".activity.PayPreferentialActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p4-1 充值套餐选择-->
+        <activity
+            android:name=".activity.PayPackageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--p4-2 订单结算-->
+        <activity
+            android:name=".activity.OrderSettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p4-3 其他支付方式-->
+        <activity
+            android:name=".activity.PaymentModeOtherActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p4-4 支付成功-->
+        <activity
+            android:name=".activity.SettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p6 加油支付-->
+        <activity
+            android:name=".activity.PayActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p6-1 加油站详情-->
+        <activity
+            android:name=".activity.GasStationDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.OilWalletActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.OilInActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.OilTransferInSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p6-2 加油支付-->
+        <activity
+            android:name=".activity.RefuelPayActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p6-2-1 订单结算-->
+        <activity
+            android:name=".activity.RefuelOrderSettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--6-2-2 加油-提交订单-->
+        <activity
+            android:name=".activity.RefuelSettlementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p10-5 零钱-->
+        <activity
+            android:name=".activity.CoinPurseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--10-5-1 转入-->
+        <activity
+            android:name=".activity.CoinTransferIntoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--10-5-2 转出-->
+        <activity
+            android:name=".activity.CoinTransferOutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--p10-11 摇积分-->
+        <activity
+            android:name=".activity.ShakeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--10-12 收藏-->
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- 预购油 -->
+        <activity
+            android:name=".activity.PreGasActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--p9-1-->
+        <activity
+            android:name=".activity.FoundDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreGasDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreGasTransferActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--        P10_6冻结款-->
+        <activity
+            android:name=".activity.FrozenSectionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--  P10_7积分-->
+        <activity
+            android:name=".activity.IntegrationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreGasTransferSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreGasReturnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreGasReturnSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BorrowGasActivity"
+            android:screenOrientation="portrait">
+        </activity> <activity
+        android:name=".activity.BorrowGasDetailActivity"
+        android:screenOrientation="portrait">
+    </activity>
+
+        <!--  P10_8-->
+        <activity
+            android:name=".activity.GasFillingCardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.InstructionsDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <!--  P10_8-->
+        <activity
+            android:name=".activity.AddGasFillingCardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--  P10_8-->
+        <activity
+            android:name=".activity.ConfirmGasFillingCardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BorrowGasReturnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BorrowGasReturnSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BorrowGasTransferActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BorrowGasTransferSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.TheCouponCodeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.CouponActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BonusActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.FuelConsumptionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.FuelConsumptionDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PwdModifyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.MakeOutInvoiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name=".activity.MakeOutAddInvoiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BonusDetailedActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.OilWebViewDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.BNDemoGuideActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+
+        </activity>
+
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/forgot_password_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="旧密码"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/EditText_hint"
+            android:hint="请输入旧密码"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:password="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forgot_password_bg"
+        android:layout_marginTop="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="新密码"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/newPassword"
+            style="@style/EditText_hint"
+            android:hint="请输入新密码"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:layout_centerVertical="true"
+            android:password="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forgot_password_bg"
+        android:layout_marginTop="@dimen/common_padding_middle">
+
+        <TextView
+            style="@style/title_template"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:text="确认密码"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/again_newPassword"
+            style="@style/EditText_hint"
+            android:hint="确认新密码"
+            android:layout_marginLeft="@dimen/hint_left"
+            android:layout_centerVertical="true"
+            android:password="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_marginTop="@dimen/common_padding_big"
+        style="@style/ButtonBlue"
+        android:text="确认"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginRight="@dimen/common_padding_middle"/>
+
+</LinearLayout>

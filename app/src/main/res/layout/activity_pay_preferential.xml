@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/common_padding_middle"
+    android:paddingRight="@dimen/common_padding_middle"
+    android:paddingBottom="@dimen/common_padding_middle"
+    android:background="@color/common_bg">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/plv_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oil_type_explain"
+            android:padding="@dimen/common_padding_middle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="说明:"
+                android:textColor="@color/common_red"
+                android:textSize="@dimen/common_small_20px" />
+
+            <TextView
+                android:id="@+id/tv_explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.超值优惠套餐，每份1000元;"
+                android:textColor="@color/common_black"
+                android:layout_below="@id/tv_explain"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:textSize="@dimen/common_small_20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.分月套餐充值后暂存冻结账户中，不能使用。次月起，系统在每月的购买日自动转到油钱包内，转入后即以使用。月份表示转入期数。"
+                android:layout_below="@id/tv_explain1"
+                android:textColor="@color/common_black"
+                android:layout_marginTop="@dimen/common_padding_small"
+                android:textSize="@dimen/common_small_20px"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            style="@style/ButtonBlue"
+            android:text="@string/common_confirm"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

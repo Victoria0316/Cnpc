@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_success_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="@string/s_bow_oil"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_middle"
+                android:text="@string/s_pre_oil_percharge"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="加油升数:"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 升"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="优惠额："
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000元"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="加油金额："
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200元"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="实际金额："
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/common_pink"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="油钱包："
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000元"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="零钱包："
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000元"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="@string/other_pay"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4700元"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="@string/actual_pay"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4700元"
+                android:textColor="@color/common_pink"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_small"
+                android:text="@string/giving_integral"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200分"
+                android:textColor="@color/common_pink"
+                android:textSize="@dimen/common_bottom_small_22px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Cnpc'
+            keyPassword 'cnpc#2015'
+            storePassword 'cnpc#2015'
+            storeFile file('E:/as_code/cnpc.jks')
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.bluemobi.cnpc"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.0"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.mcxiaoke.volley:library:1.0.16'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1'
+    compile 'org.litepal.android:core:1.2.1'
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.jungly:GridPasswordView:0.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.baoyz.swipemenulistview:library:1.1.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile files('libs/badgeview.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/alipayutdid.jar')
+    compile files('libs/alipaysecsdk.jar')
+    compile files('libs/alipaysdk.jar')
+    compile files('libs/mframework.jar')
+    compile files('libs/ShareSDK-Core-2.5.9.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.5.9.jar')
+    compile files('libs/TalkingDataAnalytics_V2.0.4.jar')
+    compile files('libs/libammsdk.jar')
+}
+

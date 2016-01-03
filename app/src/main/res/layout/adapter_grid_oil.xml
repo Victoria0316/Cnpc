@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gas="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    >
+
+    <com.bluemobi.cnpc.view.GasText
+        android:id="@+id/val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        gas:gasStyle="@style/common_text">
+
+    </com.bluemobi.cnpc.view.GasText>
+
+
+</RelativeLayout>

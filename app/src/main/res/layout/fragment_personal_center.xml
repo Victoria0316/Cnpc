@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_gray">
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/list_item">
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/common_margin" />
+
+            <TextView
+                android:id="@+id/user_phone"
+                style="@style/common_text"
+                android:layout_alignTop="@id/user_avatar"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginTop="@dimen/common_margin_little"
+                android:layout_toRightOf="@id/user_avatar" />
+
+            <TextView
+                android:id="@+id/user_vehicle"
+                style="@style/common_text"
+                android:layout_alignLeft="@id/user_phone"
+                android:layout_below="@id/user_phone"
+                android:layout_marginTop="@dimen/mine_marginText"
+                android:text="请填写车辆信息" />
+
+            <TextView
+                android:id="@+id/user_score"
+                style="@style/common_text"
+                android:layout_alignLeft="@id/user_phone"
+                android:layout_below="@id/user_vehicle"
+                android:layout_marginTop="@dimen/mine_marginText"
+                android:text="@string/integral" />
+
+            <TextView
+                android:id="@+id/user_score_value"
+                style="@style/common_text"
+                android:layout_below="@+id/user_vehicle"
+                android:layout_marginLeft="@dimen/common_padding_small"
+                android:layout_toRightOf="@id/user_score"
+                android:layout_marginTop="@dimen/mine_marginText" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/user_avatar"
+                android:layout_marginRight="@dimen/common_margin"
+                android:background="@drawable/edit_blue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_userinfo"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/list_item">
+
+            <RelativeLayout
+                android:id="@+id/rl_packet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item"
+                android:paddingBottom="30dp"
+                android:paddingTop="@dimen/common_margin">
+                <com.bluemobi.cnpc.view.GalleryFlow
+                    android:id="@+id/gallery_flow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/myRound_Height"
+                    android:layout_marginTop="25px"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gallery_flow"
+                    android:layout_marginTop="@dimen/common_margin"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/common_margin">
+
+                        <ImageView
+                            android:id="@+id/mine_packet"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_packet"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/mine_coupon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_coupon" />
+
+                        <ImageView
+                            android:id="@+id/mine_card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_card" />
+
+                        <ImageView
+                            android:id="@+id/mine_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_info" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_1"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:layout_marginTop="@dimen/common_margin"
+                        >
+
+                        <ImageView
+                            android:id="@+id/mine_shake"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_shake"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/mine_coll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_coll" />
+
+                        <ImageView
+                            android:id="@+id/mine_consume"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_consume" />
+
+                        <ImageView
+                            android:id="@+id/mine_setting"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/mine_setting" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

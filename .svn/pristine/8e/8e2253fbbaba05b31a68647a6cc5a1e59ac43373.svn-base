@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_border"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/bonus"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/mine_bonus_padding_bottom"
+        android:text="￥20"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img"
+        android:layout_marginLeft="@dimen/common_margin_little"
+        android:layout_marginTop="@dimen/common_margin_little"
+        android:layout_toRightOf="@id/img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_big"
+            android:text="中国石化加油站赞助" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_label"
+                style="@style/common_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_bonus_time" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/common_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015-05-12"
+            android:textColor="@color/common_gray"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_margin"/>
+
+        <TextView
+            android:id="@+id/limit"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_big"
+            android:text="满200元使用"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

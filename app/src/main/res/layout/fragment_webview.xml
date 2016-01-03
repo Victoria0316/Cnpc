@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/details_middle_bg">
+
+    <com.bluemobi.cnpc.view.RatioLayout
+        android:id="@+id/rl_info"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_middle">
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.bluemobi.cnpc.view.RatioLayout>
+
+<!--    <ImageView
+        android:id="@+id/imagePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_padding_middle"/>-->
+
+    <TextView
+        android:id="@+id/artTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_TitleLeft_30px"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:layout_marginBottom="@dimen/common_padding_big"/>
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_bottom_small_22px"
+        android:textColor="@color/text_light_black"
+        android:gravity="right"
+        android:paddingRight="@dimen/common_padding_middle"
+        android:layout_marginBottom="@dimen/common_padding_middle"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line"
+        android:layout_marginBottom="@dimen/common_padding_middle"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>

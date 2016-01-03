@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gas="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/common_padding_middle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/common_small_20px"
+                android:textColor="@color/common_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:textSize="@dimen/common_title_symbol_16px"
+                android:textColor="@color/common_black"
+                android:layout_marginTop="@dimen/text_top"/>
+
+          <!--  <com.bluemobi.cnpc.view.GasText
+                android:id="@+id/gas"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/common_small_20px"
+                gas:gasStyle="@style/common_text"
+                gas:text="97" />-->
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_sale_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6.82"
+            android:textSize="@dimen/common_small_20px"
+            android:textColor="@color/common_pink"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_vip_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5.82"
+            android:textSize="@dimen/common_small_20px"
+            android:textColor="@color/common_pink"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

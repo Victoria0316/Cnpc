@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/oil_type_unselect"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_oil_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="92"
+        android:textColor="@color/common_black_light"
+        android:textSize="@dimen/common_annotation_28px" />
+
+    <TextView
+        android:id="@+id/tv_oil_type_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_oil_type1"
+        android:paddingBottom="10dp"
+        android:text="#"
+        android:textSize="@dimen/common_hint_26px"
+        android:layout_marginTop="-4dp"/>
+
+    <TextView
+        android:id="@+id/tv_oil_price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="5.89元/升"
+        android:textSize="@dimen/common_annotation_28px" />
+
+</RelativeLayout>

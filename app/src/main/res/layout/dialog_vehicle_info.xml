@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/mine_dialog_padding_left">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_code"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_type"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_specifications"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_specifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_oil"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_buy_time"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_buy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_safe_endtime"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_safe_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_price"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_safe_company"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_safe_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_last_six"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_last_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_register_addr"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_register_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_vehicle_info_liter"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/mine_vehicle_info_liter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+-->
+
+</LinearLayout>

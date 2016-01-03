@@ -1,0 +1,438 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oilchecks="http://schemas.android.com/apk/res-auto"
+    xmlns:textviewgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_pay_type"
+        android:layout_marginBottom="@dimen/common_padding_big"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_wrap_totoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_bg">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_item_bg"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+
+                <ImageView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:id="@+id/Start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_toRightOf="@id/tv_left"
+                    android:text="2015-05-25        12:00"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_annotation_28px" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/line_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_top"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/oil_type_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_top"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预购油品"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_hint_26px" />
+
+                <LinearLayout
+                    android:id="@+id/rl_oil_select1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/oil_type_select"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_oil_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92"
+                            android:textColor="@color/common_black_light"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/common_annotation_28px" />
+
+                        <TextView
+                            android:id="@+id/tv_oil_type_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:paddingBottom="10dp"
+                            android:textSize="@dimen/common_annotation_28px"
+                            android:layout_toRightOf="@+id/tv_oil_type" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_oil_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="5.89元/升"
+                        android:gravity="center_vertical|right"
+                        android:layout_gravity="right|center_vertical"
+                        android:textSize="@dimen/common_annotation_28px" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oil_type_up"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:id="@+id/line_dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ctg_min_purchase"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_min_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="预购吨数"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="5000.00升"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_min_purchase"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_min_increasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_down"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="预购金额"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="5000.00升"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_min_increasing"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_pre_procedure_rates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_middle"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="手续费率"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="20%"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_pre_procedure_rates"
+                android:background="@drawable/line" />
+
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_procedure_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_last"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="手续费"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="50.00元"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_last1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_procedure_fee"
+                android:background="@drawable/line" />
+
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_actual_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_last1"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="实际金额"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="50.00元"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_actual_amount"
+                android:background="@drawable/forgot_password_bg"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+                <TextView
+                    android:id="@+id/order_change"
+                    style="@style/title_template"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:gravity="fill_vertical"
+                    android:text="@string/order_change" />
+
+                <TextView
+                    android:id="@+id/changeBalance"
+                    style="@style/EditText_hint"
+                    android:layout_alignBottom="@id/order_change"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_toRightOf="@id/order_change"
+                    android:text="余额 200元"
+                    android:textSize="@dimen/common_blue_border_24px" />
+
+                <com.bluemobi.cnpc.view.SwitchView
+                    android:id="@+id/change_button"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/common_padding_middle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/other_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_money"
+                android:background="@drawable/common_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:text="@string/order_other" />
+
+                <ImageView
+                    android:id="@+id/payAmount_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_toLeftOf="@+id/arrow_gray_right"
+                    android:src="@drawable/pay_treasure" />
+
+                <ImageView
+                    android:id="@+id/arrow_gray_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_gray_right"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/line_last2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/other_pay"
+                android:background="@drawable/line" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_pay_type"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line_bottom1"
+        android:background="@drawable/common_item_bg"
+        android:padding="@dimen/common_padding_middle">
+
+
+        <TextView
+            android:id="@+id/order_change_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_change_wallet"
+            android:textColor="@color/common_text_hint"
+            android:textSize="@dimen/common_hint_26px" />
+
+        <TextView
+            android:id="@+id/order_change_wallet_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥0"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_hint_26px" />
+
+        <TextView
+            android:id="@+id/order_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_change_wallet"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:text="其他支付"
+            android:textColor="@color/common_text_hint"
+            android:textSize="@dimen/common_hint_26px" />
+
+        <TextView
+            android:id="@+id/order_pay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/order_change_wallet_num"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:text="￥888"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_hint_26px" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/line_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_order_total"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_order_total"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Login_left"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_padding_middle">
+
+        <TextView
+            android:id="@+id/order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/actual_pay"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_big_settlement_36px" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_big"
+            android:layout_toRightOf="@id/order_total"
+            android:text="￥"
+            android:textColor="@color/common_pink"
+            android:textSize="@dimen/common_big_settlement_36px" />
+
+        <TextView
+            android:id="@+id/ActAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text"
+            android:text="100"
+            android:textColor="@color/common_pink"
+            android:textSize="@dimen/common_big_settlement_36px" />
+
+        <TextView
+            android:id="@+id/settlement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/settlement"
+            android:gravity="center"
+            android:text="@string/settlement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_big_settlement_36px" />
+    </RelativeLayout>
+</RelativeLayout>

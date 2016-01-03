@@ -1,0 +1,153 @@
+package com.bluemobi.cnpc.util;
+
+public class Constants
+{
+    /**
+     * default encoding
+     */
+    public static final String DEFAULT_CHARSET = "utf-8";
+
+    /**]
+     * app server address
+     */
+
+    //public static final String SERVER_URL = "http://112.64.173.178/cnpcapi/"; //外网
+ //   public static final String SERVER_URL = "http://101.200.193.187:7081/cnpcapi/"; //阿里云
+
+    //public static final String SERVER_URL = "http://172.51.96.188:8085/cnpcapi/";//内网
+
+    public static final String SERVER_URL = "http://120.26.75.170:8801/cnpcapi/"; //客户
+
+    //public static final String SERVER_URL = "http://10.58.160.104:8080/cnpcapi/"; //孟
+
+    /**
+     * user email or phonenum
+     */
+    public static final String USERACCOUNT = "useraccount";
+
+    /**
+     * user pwd by md5
+     */
+    public static final String USERPWD = "userpwd";
+
+    public static final String WX_APP_ID = "wxa8444c1a9f98d5f2";
+
+    /**
+     * is first load app,if so start app may load guide page
+     */
+    public static final String FIRSTLOADAPP = "firstloadapp";
+    /**
+     * record user is login
+     */
+    public static final String HASLOGIN = "haslogin";
+    
+ // 每页的基础数量
+    public static final int CURRENTNUMBASE = 10;
+    
+    public static final String ISREMBERPWD = "0";//0 没有记住密码  1 记住密码
+    
+    public static final String SSID ="ssid";//ssid
+    public static final String ID = "id";//id
+    
+    /** 
+     *  服务器返回数据 status =0 有数据 
+     */
+    
+    public static final int SERVER_BACK_HAS_DATA = 0;
+    
+    /** 
+     *  服务器返回数据 status =2 无数据 
+     */
+    
+    public static final int SERVER_BACK_NO_DATA = 2;
+    
+    /**
+     * 默认经度   南京
+     */
+    public static String DEFAULT_LATITUDE = "30.884081";
+    /**
+     * 默认纬度  南京
+     */
+    public static String DEFAULT_LONGITUDE = "121.408325";
+    
+    /**
+     * 默认城市上海市
+     */
+    public static String DEFAULT_CITYNAME = "上海市";
+
+
+    public static String DEFAULTY_CITYCODE = "310000";
+    /**
+     * apk下载地址
+     */
+    public static String FILE_PATH = "https://www.baidu.com";
+    /**
+     *  填写从短信SDK应用后台注册得到的APPKEY
+     */
+    public static final String MOB_SMS_KEY = "60a896a0d1fc";
+    /**
+     * 填写从短信SDK应用后台注册得到的APPSECRET
+     */
+    public static final String MOB_SMS_SECRET = "af197f79d8278a459d89e9395891ad7e";
+    /**
+     * 客服电话
+     */
+    public static final String SERVICE_TEL = "4001578889";
+
+    /**
+     *   不显示titlebar 右边的图片
+     */
+
+    public static final int NO_DISPLAY_TABBAR_RIGHT = -1;
+
+    public static final int NO_ANNOTATION = -9999;
+
+    public static final boolean DEBUG = true;
+
+    public static final boolean ALIPAYDEBUG = true;
+    public static final String REFRESH = "refresh";
+
+
+    /**
+     * 客服热线
+     */
+    public static final String PHONE="400-826-0970";
+
+    /**
+     * @ClassName: Api
+     * @Description: API类
+     * @author wangzhijun
+     * 
+     */
+    public class Api
+    {
+        /**
+         * 
+         * @ClassName: Http
+         * @Description: http通讯类
+         * 
+         */
+        public class Http
+        {
+            			public static final String TEST = "";
+            			public static final String AREA = "index.php/appsever/area/getarea/";
+            			public static final String RESETPHONE = "index.php/appsever/entrance/getcode/resetphone";
+            			public static final String GETPWD = "index.php/appsever/entrance/getcode/getpwd";
+            			//专线接单接口
+            			public static final String LINE_RECEIVE = "mobi/lineinfo/order";
+            			//车源接单接口
+            			public static final String CARSOURCE_RECEIVE = "mobi/carsource/order";
+            			public static final String APP_AOUBT_ID = "ff8080814c5f4937014c695c33a90096";
+            			/**
+            			 * 报警接口
+            			 */
+            			public static final String SYSTEMALERTS_MAIL = "mobi/systemalerts/email";
+            			public static final String SYSTEMALERTS_SMS = "mobi/systemalerts/sms";
+        }
+
+        public class Tcp
+        {
+
+        }
+    }
+}

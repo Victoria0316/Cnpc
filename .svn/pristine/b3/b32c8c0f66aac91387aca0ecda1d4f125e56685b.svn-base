@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+
+    <!--    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_viewpaper"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.bluemobi.cnpc.view.AutoScrollViewPager
+                android:id="@+id/auto_viewpaper"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </com.bluemobi.cnpc.view.AutoScrollViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/common_padding_small"
+                android:orientation="vertical">
+
+                <com.bluemobi.cnpc.view.SwitchDotView
+                    android:id="@+id/swicth_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fl_viewpaper"
+            android:background="@drawable/home_bg" />
+
+
+        <!--       <Button
+                   android:id="@+id/pay"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/fl_viewpaper"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="50dp"
+                   android:background="@drawable/home_pay" />
+
+               <RelativeLayout
+                   android:id="@+id/rl_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_centerVertical="true">
+
+                   <Button
+                       android:id="@+id/preferential"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/home_preferential" />
+
+                   <Button
+                       android:id="@+id/purchase"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:background="@drawable/home_purchase" />
+
+               </RelativeLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/fl_viewpaper"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/preferential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_viewpaper"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_preferential"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_purchase" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_one"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_padding_middle">
+
+            <Button
+                android:id="@+id/oilcard_prepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_oilcard_prepaid"
+                android:layout_marginRight="30dp"/>
+
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/home_pay" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_two"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/myPage_Top"
+            android:background="@drawable/home_bg_blue"
+            android:orientation="vertical">
+
+            <com.bluemobi.cnpc.view.Marqueen
+                android:id="@+id/title"
+                android:layout_width="@dimen/marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="@dimen/common_padding_middle"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="中国石油化"
+                android:textColor="@color/common_blue_cen"
+                android:textSize="@dimen/common_annotation_28px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/home_blue"
+                     android:gravity="center"
+                     android:text="90#"
+                     android:textColor="@color/common_blue"
+                     android:textSize="@dimen/common_annotation_28px" />-->
+
+                <com.bluemobi.cnpc.view.CustomSpinnerOptionHome
+                    android:id="@+id/oil_model_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_blue"
+                    android:textColor="@color/common_blue"></com.bluemobi.cnpc.view.CustomSpinnerOptionHome>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_marginRight="@dimen/common_padding_middle"
+                    android:src="@drawable/home_oil" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_black"
+                    android:gravity="center"
+                    android:textColor="@color/common_pink"
+                    android:textSize="@dimen/common_annotation_28px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--    </ScrollView>-->
+
+</RelativeLayout>

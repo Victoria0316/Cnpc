@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oilchecks="http://schemas.android.com/apk/res-auto"
+    xmlns:textviewgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_confirm"
+        android:layout_marginBottom="@dimen/common_padding_middle"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_wrap_totoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_item_bg">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_item_bg"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+
+                <ImageView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_toRightOf="@id/tv_left"
+                    android:text="2015-05-25        12:00"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_annotation_28px" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/line_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_top"
+                android:background="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/oil_type_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_top"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="借用油品"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_hint_26px" />
+
+                <com.bluemobi.cnpc.view.CheckOilView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/common_padding_middle"
+                    oilchecks:defaultbackground="@drawable/oil_type_unselect"
+                    oilchecks:lefttext="92"
+                    oilchecks:righttext="5.89元/升" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oil_type_up"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:id="@+id/line_dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ctg_min_purchase"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_min_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="最小借用量"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="10升"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_min_purchase"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_min_increasing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_down"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="@string/s_increasing_min"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="3升"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_min_increasing"
+                android:background="@drawable/line" />
+
+            <com.bluemobi.cnpc.view.CustomTextGroup
+                android:id="@+id/ctg_pre_procedure_rates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_middle"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                textviewgroup:defaultBackground="@drawable/common_item_bg"
+                textviewgroup:leftText="借用手续费率"
+                textviewgroup:leftTextColor="@color/common_black_light"
+                textviewgroup:rightText="0%"
+                textviewgroup:rightTextColor="@color/common_gray" />
+
+            <ImageView
+                android:id="@+id/line_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctg_pre_procedure_rates"
+                android:background="@drawable/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_last"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:background="@drawable/common_middle_bg">
+
+                <TextView
+                    android:id="@+id/tv_tu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请输入借用油品升数"
+                    android:padding="@dimen/common_padding_middle"
+                    android:textColor="@color/common_black_light"/>
+
+
+                <!--        <com.bluemobi.cnpc.view.AddMinView
+                            android:layout_below="@id/tv_tu"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content">
+                
+                        </com.bluemobi.cnpc.view.AddMinView>-->
+
+                <LinearLayout
+                    android:layout_below="@id/tv_tu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/min"/>
+
+                    <EditText
+                        android:id="@+id/et_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000"
+                        android:gravity="center"
+                        android:textSize="@dimen/common_card_integral_22px"
+                        android:background="@drawable/middle"/>
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_order_prirce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_wrap"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/common_padding_middle"
+                android:text="@string/s_borrow_price"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_prirce"
+                android:layout_marginBottom="@dimen/common_padding_middle"
+                android:layout_marginRight="@dimen/common_padding_middle"
+                android:layout_marginLeft="@dimen/common_padding_middle"
+                android:background="@drawable/common_info"
+                android:gravity="center"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:paddingLeft="@dimen/common_padding_middle">
+
+
+                <TextView
+                    android:id="@+id/tv_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="说明："
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/common_small_20px" />
+
+                <TextView
+                    android:id="@+id/tv_explain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_explain"
+                    android:text="油品购买后,直接存入借用油账 户内,可用于消费、转入油卡或退货。"
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/common_small_20px" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:text="确认"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_TitleLeft_30px"
+        android:layout_margin="@dimen/common_padding_middle"
+        android:background="@drawable/btn_blue"/>
+
+
+</RelativeLayout>

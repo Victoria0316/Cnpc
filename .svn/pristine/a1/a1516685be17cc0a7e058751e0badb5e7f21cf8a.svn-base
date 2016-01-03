@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/common_bg_gray"
+    android:id="@+id/main"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/common_divider" />
+
+            <LinearLayout
+                android:id="@+id/avatar_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/common_margin"
+                android:paddingTop="@dimen/common_margin"
+
+                >
+
+                <ImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:background="@drawable/avatar_upload" />
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_little"
+                    android:text="@string/mine_avatar_upload"
+                    android:textColor="@color/common_gray" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/common_divider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_name" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:background="@null"
+                    android:hint="@string/mine_name_hint"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_gender_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    android:id="@+id/gender_label"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_gender" />
+
+                <RadioGroup
+                    android:id="@+id/gender_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/gender_man"
+                        style="@style/radio_btn"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/mine_gender_man"
+                         />
+
+                    <RadioButton
+                        android:id="@+id/gender_woman"
+                        style="@style/radio_btn"
+                        android:layout_marginLeft="@dimen/common_margin_big"
+                        android:text="@string/mine_gender_woman"
+
+                        />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_phone_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_phone" />
+
+                <EditText
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:background="@null"
+                    android:hint="@string/mine_phone_hint"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+          <!--  <RelativeLayout
+                android:id="@+id/mine_card_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_id_card" />
+
+                <EditText
+                    android:id="@+id/user_id_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:background="@null"
+                    android:hint="@string/mine_id_card_hint"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_driver_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_driver" />
+
+                <EditText
+                    android:id="@+id/user_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:background="@null"
+                    android:hint="@string/mine_driver_hint"
+                    android:textSize="14sp" />
+            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/mine_attention_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_attention"
+
+                    />
+
+                <TextView
+                    android:id="@+id/attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:text="92汽油"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/attention_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_vehicle_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height"
+                android:background="@drawable/list_item_down"
+                android:paddingLeft="@dimen/common_margin">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_vehicle_info"
+
+                    />
+
+                <TextView
+                    android:id="@+id/vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mine_item_margin_left"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/vehicle_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right"
+
+                    />
+
+                <TextView
+                    android:id="@+id/vehicle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/vehicle_arrow"
+                    android:text="@string/mine_vehicle_hint"
+                    android:textColor="@color/common_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue"
+                android:text="@string/global_save"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_margin_big"
+                android:textColor="@color/white"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

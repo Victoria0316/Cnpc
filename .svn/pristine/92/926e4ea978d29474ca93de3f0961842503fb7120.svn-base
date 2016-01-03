@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/list_item"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_big"
+                    android:text="@string/s_invoice_personal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:background="@color/common_divider" />
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_big"
+                    android:text="@string/s_invoice_company" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rg_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/common_margin">
+
+                    <RadioButton
+                        android:id="@+id/personal_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/selected_button"
+                        android:checked="true"
+                        android:background="@null"/>
+
+                    <RadioButton
+                        android:id="@+id/personal_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/selected_button"
+                        android:background="@null"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/sel_ll"
+        android:layout_margin="@dimen/common_margin"
+        android:background="@drawable/corners_border_white"
+        android:gravity="top|left"
+        android:hint="@string/s_invoice_hint"
+        android:padding="@dimen/common_margin"
+        android:textSize="@dimen/common_hint_26px"
+        android:maxLength="30"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/save"
+        style="@style/btn_blue"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_margin"
+        android:text="@string/global_save" />
+</RelativeLayout>

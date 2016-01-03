@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/list_item"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_margin">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_padding_middle"
+                android:drawableLeft="@drawable/order_details"
+                android:drawablePadding="@dimen/common_padding_middle"
+                android:gravity="center_vertical"
+                android:text="@string/order_details"
+                android:textColor="@color/common_black_light"
+                android:textSize="@dimen/common_title_template_26px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_imaginary_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/order_number"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/order_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/trading_hours"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/transfer_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_gas_type"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_gas_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_transfer_cur_unit_price"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_transfer_cur_unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_transfer_pre_unit_price"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_transfer_pre_unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_transfer_pre_storage_fee"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_transfer_pre_storage_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_return_volume"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_return_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_return_amount"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_return_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_return_amount_real"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_return_amount_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="@string/mine_pre_transfer_left_volume"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_transfer_left_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding_big"
+                android:layout_marginTop="@dimen/common_padding_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_padding_small"
+                    android:text="转入零钱包后余额："
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+                <TextView
+                    android:id="@+id/mine_pre_transfer_left_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_bottom_small_22px" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

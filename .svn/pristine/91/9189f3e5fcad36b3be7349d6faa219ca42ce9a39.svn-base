@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_item_bg"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+
+                <ImageView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:id="@+id/time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:layout_toRightOf="@id/tv_left"
+                    android:text="2015-05-10        12:00:00"
+                    android:textColor="@color/common_black_light"
+                    android:textSize="@dimen/common_annotation_28px" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pay_bg"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_bulk"
+                    android:textSize="@dimen/common_blue_border_24px"
+                    android:textColor="@color/common_black_light"/>
+
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/lv_pay_preferential"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:background="@drawable/forgot_password_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:text="@string/pay_discount"/>
+
+                <TextView
+                    android:id="@+id/depositRate"
+                    style="@style/EditText_hint"
+                    android:text="90%"
+                    android:gravity="right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forgot_password_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:text="@string/pay_amount"/>
+
+                <TextView
+                    android:id="@+id/buyPrice"
+                    style="@style/EditText_hint"
+                    android:text="1000.00元"
+                    android:gravity="right"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forgot_password_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:text="赠送"/>
+
+                <TextView
+                    android:id="@+id/preferentialPrice"
+                    style="@style/EditText_hint"
+                    android:text="100.00元"
+                    android:gravity="right"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pay_add"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:padding="@dimen/common_padding_middle">
+
+                <TextView
+                    style="@style/title_template"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_amount"/>
+
+                <LinearLayout
+                    android:layout_below="@id/tv_tu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_padding_big">
+
+                    <ImageView
+                        android:id="@+id/iv_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/min"/>
+
+                    <EditText
+                        android:id="@+id/et_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/common_card_integral_22px"
+                        android:background="@drawable/middle"
+                        android:inputType="numberDecimal"/>
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:layout_marginRight="@dimen/common_padding_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实充金额"
+                    android:textSize="@dimen/common_hint_26px"
+                    android:layout_toLeftOf="@+id/total_price"/>
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textSize="@dimen/common_hint_26px"
+                    android:textColor="@color/common_pink"
+                    android:layout_toLeftOf="@+id/unit"/>
+
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textSize="@dimen/common_hint_26px"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_padding_middle">
+
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/ButtonBlue"
+                    android:text="@string/common_confirm"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

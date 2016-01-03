@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/mine_dialog_padding_left">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_order_date"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fueloil_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="@string/mine_order_num"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="加油站："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="油品："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="单价："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="吨数："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_liter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="优惠金额："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_preprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="实际金额："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_actprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:text="转出金额："
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px" />
+
+        <TextView
+            android:id="@+id/tv_fuel_consum_outprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_bottom_small_22px"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

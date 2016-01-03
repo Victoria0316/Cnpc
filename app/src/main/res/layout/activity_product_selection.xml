@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gas="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_item_bg"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle">
+
+
+        <ImageView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/time_icon" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_middle"
+            android:layout_toRightOf="@id/tv_left"
+            android:text="2015-05-25        今日可预购或借用"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_annotation_28px" />
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:cacheColorHint="@color/common_transparent"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@drawable/selector_radio_border"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:layout_below="@+id/rl_top">
+
+    </GridView>
+
+    <RelativeLayout
+        android:layout_below="@id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_explain"
+        android:layout_margin="@dimen/common_padding_middle"
+        android:padding="@dimen/common_padding_middle"
+        android:background="@drawable/oil_type_explain">
+
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说明:"
+            android:textColor="@color/common_red"
+            android:textSize="@dimen/common_small_20px"/>
+
+        <TextView
+            android:id="@+id/tv_explain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.自预购或预借日第二天起计费;"
+            android:textColor="@color/common_black"
+            android:layout_below="@id/tv_explain"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:textSize="@dimen/common_small_20px"/>
+
+        <TextView
+            android:id="@+id/tv_explain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.代储费率:0.01%/天 ,  借用费率:0.01%/天"
+            android:layout_below="@id/tv_explain1"
+            android:textColor="@color/common_black"
+            android:layout_marginTop="@dimen/common_padding_small"
+            android:textSize="@dimen/common_small_20px"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/rl_explain"
+        android:padding="@dimen/common_padding_middle"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/tv_oil_pre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="油品预购"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_annotation_28px"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:background="@drawable/btn_blue"
+            />
+
+        <Button
+            android:id="@+id/tv_oil_bow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="油品借用"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_annotation_28px"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:background="@drawable/btn_red"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

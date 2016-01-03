@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:background="@color/common_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:background="@drawable/shape_bottom_top_line"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <EditText
+                android:id="@+id/title"
+                android:background="@null"
+                android:textColorHint="@color/common_gray"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/common_hint_26px"
+                android:layout_height="wrap_content"
+                android:hint="请输入标题" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/set_line"/>
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="0.8">
+
+            <EditText
+                android:id="@+id/content"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/common_gray"
+                android:textSize="@dimen/common_hint_26px"
+                android:layout_height="wrap_content"
+                android:hint="请输入文字信息...." />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_marginTop="@dimen/common_padding_big"
+        style="@style/ButtonBlue"
+        android:text="确认"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginRight="@dimen/common_padding_middle"/>
+
+</LinearLayout>

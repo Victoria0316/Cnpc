@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/come_pay"
+            style="@style/ButtonBlue"
+            android:text="@string/come_pay"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/details_bg"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/praise_bg">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/cb_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/praise_btn"
+                        android:layout_marginRight="@dimen/common_padding_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_collectNum"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_title_template_26px"
+                        android:textColor="@color/text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/cb_praise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/collection_btn"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/common_padding_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_praiseNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_title_template_26px"
+                        android:textColor="@color/text" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:background="@drawable/details_small_bg"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加油站介绍："
+                    android:textSize="@dimen/common_title_template_26px"
+                    android:textColor="@color/common_black"
+
+                    android:lineSpacingExtra="@dimen/common_padding_small" />
+
+                <TextView
+                    android:id="@+id/tv_gas_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_title_template_26px"
+                    android:textColor="@color/crop__button_text"
+                    android:lineSpacingExtra="@dimen/common_padding_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="vertical"
+                android:background="@drawable/details_big_bg"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:paddingTop="@dimen/common_padding_middle"
+                android:paddingBottom="@dimen/common_padding_middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/common_padding_big">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/oil"
+                        android:textSize="@dimen/common_title_template_26px"
+                        android:textColor="@color/common_black"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/retail"
+                        android:textSize="@dimen/common_title_template_26px"
+                        android:textColor="@color/common_black"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/members"
+                        android:textSize="@dimen/common_title_template_26px"
+                        android:textColor="@color/common_black"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <com.bluemobi.cnpc.view.CustomListView
+                    android:id="@+id/lv_oils"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/white"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none">
+                </com.bluemobi.cnpc.view.CustomListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/promotion"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/blue_round"
+                android:text="促销信息："
+                android:textSize="@dimen/common_title_template_26px"
+                android:textColor="@color/common_blue"
+                android:gravity="center"
+                android:layout_margin="@dimen/common_padding_middle"/>
+
+
+
+            <LinearLayout
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:background="@drawable/details_small_bg"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/tv_promotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_title_template_26px"
+                    android:textColor="@color/crop__button_text"
+                    android:lineSpacingExtra="@dimen/common_padding_small" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

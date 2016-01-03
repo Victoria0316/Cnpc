@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_bg_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/vehicle_code_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_code"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_code" />
+
+                <EditText
+                    android:id="@+id/vehicle_code_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/vehicle_code"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/mine_vehicle_code_hint"
+                    android:textSize="@dimen/common_blue_border_28px"
+                    android:layout_marginLeft="@dimen/marginLeft"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_type_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_tpye"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_type" />
+
+                <ImageView
+                    android:id="@+id/vehicle_tpye_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_type_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@id/vehicle_tpye_arrow"
+                    android:hint="@string/mine_vehicle_type_hint" />
+            </RelativeLayout>
+
+   <!--         <RelativeLayout
+                android:id="@+id/vehicle_oil_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_oil"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_oil" />
+
+                <ImageView
+                    android:id="@+id/vehicle_oil_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_oil_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@id/vehicle_oil_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_buy_time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_buy_time"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_buy_time" />
+
+                <ImageView
+                    android:id="@+id/vehicle_buy_time_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_buy_time_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@id/vehicle_buy_time_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_safe_endtime_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_safe_endtime"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_safe_endtime" />
+
+                <ImageView
+                    android:id="@+id/vehicle_safe_endtime_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_safe_endtime_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@id/vehicle_safe_endtime_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_price_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_price"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_price" />
+
+                <TextView
+                    android:id="@+id/tv_price_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:text="万元 " />
+
+                <EditText
+                    android:id="@+id/vehicle_price_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center_vertical"
+                    android:layout_toLeftOf="@id/tv_price_per"
+                    android:layout_toRightOf="@id/vehicle_price"
+                    android:background="@null"
+                    android:textSize="@dimen/common_blue_border_28px"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:inputType="numberDecimal"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_safe_company_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_safe_company"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_safe_company" />
+
+                <ImageView
+                    android:id="@+id/vehicle_safe_company_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_safe_company_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/vehicle_safe_company_arrow"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/common_blue_border_28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_last_six_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_last_six"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_last_six" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:text="元 " />
+
+                <EditText
+                    android:id="@+id/vehicle_last_six_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_toRightOf="@id/vehicle_last_six"
+                    android:inputType="number"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:textSize="@dimen/common_blue_border_28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_reg_addr_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_reg_addr"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_register_addr" />
+
+                <ImageView
+                    android:id="@+id/vehicle_reg_addr_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+                <TextView
+                    android:id="@+id/vehicle_reg_addr_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/vehicle_reg_addr_arrow"
+
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/common_blue_border_28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vehicle_liter_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_vehicle_edit_item_h"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/list_item">
+
+                <TextView
+                    android:id="@+id/vehicle_liter"
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="@string/mine_vehicle_liter" />
+                <ImageView
+                    android:id="@+id/vehicle_safe_liter_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:src="@drawable/arrow_gray_right" />
+
+
+                <TextView
+                    android:id="@+id/vehicle_liter_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/vehicle_safe_liter_arrow"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/common_blue_border_28px" />
+            </RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/common_margin_big"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="@dimen/common_margin_big"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:text="@string/global_save"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

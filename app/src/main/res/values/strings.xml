@@ -1,0 +1,518 @@
+<resources>
+    <string name="app_name">油管家</string>
+
+    <string name="global_save">保存</string>
+    <string name="global_tip">提示</string>
+    <string name="global_month">月</string>
+    <string name="global_sure">确定</string>
+    <string name="global_desc">说明：</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="search">搜索</string>
+    <string name="load_error">加载失败,点击重试</string>
+
+    <string name="crop__saving">正在保存…</string>
+    <string name="crop__wait">请等待…</string>
+    <string name="crop__pick_error">没有可用的图片</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel">取消</string>
+
+    <string name="Login">登录</string>
+
+    <!--登录-->
+    <string name="edt_phone">请输入手机号码</string>
+    <string name="edt_password">请输入密码</string>
+    <string name="again_password">请再次输入密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="title_registered">注册</string>
+
+    <!--注册-->
+    <string name="annotation_grey">我已同意并阅读</string>
+    <string name="annotation_blue">用户协议</string>
+    <string name="attention_oil">关注油品</string>
+
+    <!--忘记密码-->
+    <string name="title_password">忘记密码</string>
+    <string name="phone">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="edt_verification">请输入验证码</string>
+    <string name="obtain_verification">获取验证码</string>
+    <string name="Next">下一步</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="edt_new_password">请输入新密码</string>
+    <string name="again_new_password">再次输入新密码</string>
+    <string name="confirm">确定</string>
+    <string name="registration_agreement">注册协议</string>
+    <string name="password">密码</string>
+
+    <!--软件分享-->
+    <string name="Software_share">软件分享</string>
+    <string name="Registered_successfully">恭喜您，注册成功</string>
+    <string name="welcome">欢迎加入油管家大家庭！</string>
+    <string name="annotation">注册有礼，送您 %1$s 积分。现在邀请小伙伴加入，即可再获得 %2$s 积分。</string>
+    <string name="invitation">邀请小伙伴加入</string>
+    <string name="immediately">立刻送</string>
+    <string name="integral">积分:</string>
+    <string name="integral_tar">积分</string>
+    <string name="annotation_explain"> 积分可用于摇奖，随机获得不同金额的红包、消费券、积分等。</string>
+
+    <string name="invitation_button">邀请小伙伴</string>
+    <!-- P5油品选择-->
+    <string name="s_product_selection">选择油品</string>
+    <string name="s_function_introduction">业务功能介绍</string>
+    <string name="s_pre_orders_for_sure">预购吨数确定</string>
+    <string name="s_bow_orders_for_sure">借用吨数确定</string>
+    <string name="s_increasing_min">递增最小量</string>
+    <string name="s_pre_procedure_rates">预购手续费率</string>
+    <string name="s_pre_price">预购金额：%1$s元</string>
+    <string name="s_guarantee_price">担保金额：%1$s元</string>
+    <string name="s_order_payment_success">订单支付成功</string>
+    <string name="s_pre_oil_type">预购油品 %1$s#</string>
+    <string name="s_bow_oil_type">预借油品 %1$s#</string>
+    <string name="s_pre_oil_charge">价格 %1$s元</string>
+    <string name="s_borrow_price">担保金额：%1$s元</string>
+
+    <string name="s_bow_oil">油品 %1$s#</string>
+    <string name="s_pre_oil_percharge">单价 %1$s元</string>
+
+    <!-- 个人中心 -->
+    <string name="mine_avatar_upload">上传头像</string>
+    <string name="mine_name">姓名</string>
+    <string name="mine_name_hint">请输入姓名</string>
+    <string name="mine_gender">性别</string>
+    <string name="mine_gender_man">男</string>
+    <string name="mine_gender_woman">女</string>
+    <string name="mine_phone">手机号</string>
+    <string name="mine_phone_hint">请输入手机号</string>
+    <string name="mine_id_card">身份证号</string>
+    <string name="mine_id_card_hint">请输入身份证号</string>
+    <string name="mine_driver">驾驶证号</string>
+    <string name="mine_driver_hint">请输入驾驶证号</string>
+    <string name="mine_attention">关注油品</string>
+    <string name="mine_attention_hint">添加关注</string>
+    <string name="mine_vehicle_info">车辆信息</string>
+    <string name="mine_vehicle_hint">添加爱车</string>
+    <string name="mine_vehicle_edit_hint">编辑爱车</string>
+    <string name="mine_vehicle_add_label">添加新车辆信息</string>
+    <string name="mine_person_info">个人信息</string>
+    <string name="mine_vehicle_list">车辆列表</string>
+    <string name="mine_oil_select">选择油品</string>
+
+    <!-- vehicle edit -->
+    <string name="mine_vehicle_code">车牌号</string>
+    <string name="mine_vehicle_code_hint">请输入车牌号</string>
+    <string name="mine_vehicle_type">车辆品牌/型号</string>
+    <string name="mine_vehicle_type_hint">请选择车辆品牌/型号</string>
+    <string name="mine_vehicle_oil">加注油品</string>
+    <string name="mine_vehicle_oil_hint">请选择加注油品</string>
+    <string name="mine_vehicle_buy_time">购买年月</string>
+    <string name="mine_vehicle_buy_time_hint">请输入购买年月</string>
+    <string name="mine_vehicle_safe_endtime">到期保险日期</string>
+    <string name="mine_vehicle_safe_endtime_hint">请输入到期保险日期</string>
+    <string name="mine_vehicle_price">新车价格</string>
+    <string name="mine_vehicle_price_hint">请输入新车价格</string>
+    <string name="mine_vehicle_safe_company">保险公司</string>
+    <string name="mine_vehicle_safe_company_hint">请输入保险公司</string>
+    <string name="mine_vehicle_last_six">车架后6位</string>
+    <string name="mine_vehicle_last_six_hint">请输入车架后6位</string>
+    <string name="mine_vehicle_register_addr">车辆注册地</string>
+    <string name="mine_vehicle_register_addr_hint">请输入车辆注册地</string>
+    <string name="mine_vehicle_liter">汽车排量</string>
+    <string name="mine_vehicle_liter_hint">请输入汽车排量</string>
+
+
+    <!-- 车辆信息 -->
+    <string name="mine_vehicle_info_code">车牌号：</string>
+    <string name="mine_vehicle_info_type">车辆品牌/型号：</string>
+    <string name="mine_vehicle_info_specifications">规格型号：</string>
+    <string name="mine_vehicle_info_oil">加注油品：</string>
+    <string name="mine_vehicle_info_buy_time">购买年月：</string>
+    <string name="mine_vehicle_info_safe_endtime">到期保险日期：</string>
+    <string name="mine_vehicle_info_price">新车价格：</string>
+    <string name="mine_vehicle_info_safe_company">保险公司：</string>
+    <string name="mine_vehicle_info_last_six">车架后6位：</string>
+    <string name="mine_vehicle_info_register_addr">车辆注册：</string>
+    <string name="mine_vehicle_info_liter">汽车排量：</string>
+
+    <!-- 油钱包 -->
+    <string-array name="mine_gas_wallet_title">
+        <item>时间</item>
+        <item>类别</item>
+        <item>金额</item>
+    </string-array>
+
+
+    <string name="s_gas_hint">信息输入不正确，绑定不成功</string>
+    <!-- 预购油 -->
+
+    <string-array name="mine_pre_title">
+        <item>时间</item>
+        <item>油品</item>
+        <item>预购吨数</item>
+        <item>预购金额</item>
+    </string-array>
+
+
+    <string-array name="oil_liter">
+        <item>1.0L以下</item>
+        <item>1.0L-1.1L</item>
+        <item>1.3L</item>
+        <item>1.4L-1.5L</item>
+        <item>1.6L</item>
+        <item>1.7L</item>
+        <item>1.8L</item>
+        <item>2.0L</item>
+        <item>2.1L-2.4L</item>
+        <item>2.5L-3.0L</item>
+        <item>3.0L-3.5L</item>
+        <item>3.5L-4.0L</item>
+        <item>4.0L以上</item>
+    </string-array>
+
+
+
+
+    <string name="mine_pre_title">预购油</string>
+    <string name="mine_pre_gas">油品</string>
+    <string name="mine_pre_gas_tip_info">若需要转入油钱包或退货，请点击对应预购油品记录！</string>
+    <string name="mine_pre_gas_type">预购油品：</string>
+    <string name="mine_pre_gas_unit_price">单价：</string>
+    <string name="mine_pre_gas_left_volume">预购余量：</string>
+    <string name="mine_pre_gas_cur_amount">当前金额：</string>
+    <string name="mine_pre_gas_storage">代储费：</string>
+    <string name="mine_pre_gas_pre_unit_price">预购单价：</string>
+    <string name="mine_pre_gas_pre_amount">预购金额：</string>
+    <string name="mine_pre_gas_fee">已付手续费：</string>
+    <string name="mine_pre_gas_statistics">当前盈亏：</string>
+    <string name="mine_pre_gas_title_time">时间</string>
+    <string name="mine_pre_gas_title_type">类别</string>
+    <string name="mine_pre_gas_title_volume">吨</string>
+    <string name="mine_pre_gas_title_yuan">元</string>
+    <string name="mine_pre_gas_transfer">转入油钱包</string>
+    <string name="mine_pre_gas_order_back">退货</string>
+    <string name="mine_pre_auto_transfer">资金将自动转入零钱包内。</string>
+
+    <string name="mine_pre_transfer_gas">预购油品</string>
+    <string name="mine_pre_transfer_left">预购余量</string>
+    <string name="mine_pre_transfer_fee">代储费</string>
+    <string name="mine_pre_transfer_statistics">当前盈亏</string>
+    <string name="mine_pre_transfer_volume">吨数</string>
+    <string name="mine_pre_transfer_amount">转出金额</string>
+    <string name="mine_pre_transfer_hint">请输入转出的吨数</string>
+    <string name="mine_pre_transfer_btn">确认转入油钱包</string>
+    <string name="mine_pre_transfer_success">转入油钱包成功</string>
+    <string name="mine_pre_transfer_cur_unit_price">当前单价：</string>
+    <string name="mine_pre_transfer_pre_unit_price">预购单价：</string>
+    <string name="mine_pre_transfer_pre_storage_fee">代储费：</string>
+    <string name="mine_pre_transfer_out_volume">转出吨数：</string>
+    <string name="mine_pre_transfer_out_amount">转出金额：</string>
+    <string name="mine_pre_transfer_out_amount_real">实际转出金额：</string>
+    <string name="mine_pre_transfer_left_volume">剩余预购吨数：</string>
+    <string name="mine_pre_transfer_left_amount">转入油钱包后余额：</string>
+    <string name="mine_pre_return_rate">退货手续费率</string>
+    <string name="mine_pre_return_fee">退货手续费：</string>
+    <string name="mine_pre_return_real_amount">退货实际金额：</string>
+    <string name="mine_pre_return_count">退货数量</string>
+    <string name="mine_pre_return_hint">请输入退货吨数</string>
+    <string name="mine_pre_return_desc">资金将自动转入零钱包内。</string>
+    <string name="mine_pre_return">退货</string>
+    <string name="mine_pre_return_success">退货成功</string>
+    <string name="mine_pre_return_volume">退货吨数：</string>
+    <string name="mine_pre_return_amount">退货金额：</string>
+    <string name="mine_pre_return_amount_real">实际退货金额：</string>
+
+    <!-- 借用油 -->
+    <string name="mine_borrow_gas_title">借用油</string>
+    <string name="mine_borrow_gas_item_tip">若需要转入油钱包或归还，请点击对应借用油品记录！</string>
+    <string name="mine_borrow_gas_btn_return">归还</string>
+    <string name="mine_borrow_gas_guarantee">担保金：</string>
+    <string name="mine_borrow_gas_borrow_fee">借用费：</string>
+    <string name="mine_borrow_gas_borrow_type">借用油品：</string>
+    <string name="mine_borrow_gas_borrow_left">借用余量：</string>
+    <string name="mine_borrow_gas_detail_title">预借油详情</string>
+    <string name="borrow_gas_detail_title">借用油详情</string>
+    <string name="mine_borrow_gas_type">借用油品</string>
+    <string name="mine_borrow_gas_left">借用余量</string>
+    <string name="mine_borrow_gas_price">当前价钱</string>
+    <string name="mine_borrow_gas_unit_price">借用单价</string>
+    <string name="mine_borrow_gas_unit_price_">借用单价：</string>
+    <string name="mine_borrow_gas_unit_money">借用费：</string>
+    <string name="mine_borrow_gas_guarantee_">担保金额</string>
+    <string name="mine_borrow_gas_borrow_fee_">借用费</string>
+    <string name="mine_borrow_gas_borrow_rate">归还手续费率</string>
+    <string name="mine_borrow_gas_borrow_volume">归还吨数</string>
+    <string name="mine_borrow_gas_borrow_volume_">归还吨数：</string>
+    <string name="mine_borrow_gas_borrow_volume_hint">请输入归还吨数</string>
+    <string name="mine_borrow_gas_borrow_return_fee_">归还手续费</string>
+    <string name="mine_borrow_gas_borrow_return_amount_">归还金额</string>
+    <string name="mine_borrow_gas_borrow_return_amount">归还金额：</string>
+    <string name="mine_borrow_gas_borrow_return_amount_real">实际归还金额：</string>
+    <string name="mine_borrow_gas_borrow_litre">剩余借用吨数：</string>
+    <string name="mine_borrow_gas_borrow_return_left">零钱包余额：</string>
+    <string name="mine_borrow_gas_borrow_return_hint">资金将自动转入零钱包内。</string>
+    <string name="mine_borrow_gas_sure">确认归还</string>
+    <string name="mine_borrow_gas_return">归还</string>
+    <string name="mine_borrow_gas_return_success">归还成功</string>
+    <string name="mine_borrow_gas_transfer_volume">转出吨数</string>
+    <string name="mine_borrow_gas_transfer_out_amount_real">实际转出金额</string>
+    <string name="mine_borrow_gas_borrow_left_">剩余借用吨数：</string>
+
+    <string name="mine_bonus_title">红包</string>
+    <string name="mine_bonus_time">有效日期：</string>
+    <string name="mine_bonus_valid">未用</string>
+    <string name="mine_bonus_used">已用</string>
+    <string name="mine_bonus_invalid">无效</string>
+    <string name="mine_bonus_number">红包码</string>
+
+
+
+    <string-array name="mine_borrow_title">
+        <item>时间</item>
+        <item>油品</item>
+        <item>预购吨数</item>
+        <item>预购金额</item>
+    </string-array>
+
+
+    <string name="mine_vehicle_type_title">选择品牌型号</string>
+    <string name="mine_oilwallet_in">转入油卡</string>
+    <string name="mine_oilwallet_amount">金额</string>
+    <string name="mine_oilwallet_amount_in">请输入转入金额</string>
+    <string name="mine_oilwallet_card">转入的油卡</string>
+    <string name="mine_oilwallet_transfer_desc_label">说明：</string>
+    <string name="mine_oilwallet_transfer_desc">1. 转入金额不能超过第三方结算公司规定的每日最大转出金额。</string>
+    <string name="mine_oilwallet_transfer_success">转入油卡成功</string>
+    <string name="mine_oilwallet_transfer_in">确认转入</string>
+    <string name="mine_oilwallet_transfer_out">确认转出</string>
+    <!-- 油钱包dialog -->
+    <string name="mine_order_date">订单日期：</string>
+    <string name="mine_order_num">订单号：</string>
+    <string name="mine_order_pay_amount">实际支付金额：</string>
+    <string name="mine_order_preferential">优惠金额：</string>
+    <string name="mine_order_transfer_in">转入金额：</string>
+
+
+
+    <string name="mine_gas_station">加油站：</string>
+    <string name="mine_gas_card">加油卡号：</string>
+    <string name="mine_gas_crad_transfer_int">加油卡转入：</string>
+    <string name="mine_gas_card_transfer_out">油钱包转出：</string>
+    <string name="mine_cur_gas_wallet">当前油钱包：</string>
+
+
+    <string name="set">设置</string>
+
+    <!--首页-->
+    <string name="home_page">油管家</string>
+    <string name="home_near">附近</string>
+    <string name="home_found">发现</string>
+    <string name="home_my">我</string>
+    <string name="top_up">充值优惠</string>
+    <string name="come_pay">加油支付</string>
+    <string name="oil_purchase">油品预购</string>
+    <string name="test">上海</string>
+    <string name="map_list">列表</string>
+
+    <!--充值优惠-->
+    <string name="pay_instant">即时</string>
+    <string name="instant">即时到账</string>
+    <string name="pay_discount">返利比率</string>
+    <string name="common_confirm">确认</string>
+    <string name="pay_package">充值套餐选择</string>
+    <string name="pay_bulk">套餐团购</string>
+    <string name="pay_preferential">每份收益</string>
+    <string name="pay_amount">每份金额</string>
+    <string name="input_amount">请输入充值的金额</string>
+    <string name="total_price">充值金额 %1$s 元</string>
+    <string-array name="vehicle_list">
+        <item>大众</item>
+        <item>丰田</item>
+        <item>马自达</item>
+        <item>奥迪</item>
+        <item>奔驰</item>
+        <item>雪佛兰</item>
+        <item>宝马</item>
+        <item>现代</item>
+        <item>别克</item>
+        <item>长城</item>
+        <item>比亚迪</item>
+        <item>吉利</item>
+        <item>雪铁龙</item>
+        <item>雪兰博基尼</item>
+        <item>法拉利</item>
+        <item>捷豹</item>
+        <item>特斯拉</item>
+        <item>路虎</item>
+        <item>日产</item>
+    </string-array>
+    <string-array name="city">
+        <item>厦门市</item>
+        <item>福州市</item>
+        <item>泉州市</item>
+        <item>漳州市</item>
+        <item>龙岩市</item>
+        <item>a</item>
+        <item>鞍山</item>
+        <item>白城</item>
+        <item>c</item>
+        <item>酷奇</item>
+        <item>沈阳</item>
+        <item>大连</item>
+        <item>抚顺</item>
+        <item>朝阳</item>
+        <item>江西</item>
+        <item>铁岭</item>
+        <item>辽阳</item>
+        <item>锦州</item>
+        <item>营口</item>
+        <item>盘锦</item>
+    </string-array>
+    <!--订单结算-->
+    <string name="order_settlement">订单结算</string>
+    <string name="order_top_up">充值金额</string>
+    <string name="order_preferential">收益金额</string>
+    <string name="order_actual">实际金额</string>
+    <string name="order_coupon">优惠劵</string>
+    <string name="order_oil">使用油钱包</string>
+    <string name="order_change">使用零钱包</string>
+    <string name="order_other">其他支付方式</string>
+    <string name="order_oil_wallet">油钱包</string>
+    <string name="order_change_wallet">零钱包</string>
+    <string name="order_pay">支付金额</string>
+    <string name="order_total">总金额:</string>
+    <string name="settlement">结算</string>
+
+    <string name="mode_payment">选择支付方式</string>
+    <string name="Pay_treasure">支付宝</string>
+    <string name="WeChat">微信</string>
+    <string name="Internet_bank">网银</string>
+
+    <!--提交订单-->
+    <string name="pay_success">支付成功</string>
+    <string name="congratulations_success">恭喜您，支付成功</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_number">订单编号：</string>
+    <string name="trading_hours">交易时间：</string>
+    <string name="order_pay_amount">充值金额：</string>
+    <string name="order_annotation">(已转入冻结款，当前冻结款余额 %1$s 元)</string>
+    <string name="preferential_amount">收益金额：</string>
+    <string name="actual_amount">实际金额：</string>
+    <string name="zero_wallet">零钱包支付：</string>
+    <string name="red_packet">红包支付：</string>
+    <string name="other_pay">其他支付：</string>
+    <string name="actual_pay">实际支付：</string>
+    <string name="giving_integral">赠积分：</string>
+    <string name="cumulative_integral">当前积分累计：</string>
+    <string name="shake">积分摇一摇，摇出好运气，点击立即参与</string>
+    <string name="coin_purse">零钱包：</string>
+    <string name="Oil_purse">油钱包：</string>
+    <string name="coupons">优惠券：</string>
+    <string name="refuel_amount">加油金额：</string>
+    <string name="refuel_Purchase">预购油品：</string>
+    <string name="refuel_price">单价：%1$s 元/升</string>
+    <string name="amount">金额：</string>
+    <string name="oil_number">升数：100升</string>
+
+    <string name="cancel">取消</string>
+    <string name="details">详情</string>
+    <string name="oil">油品</string>
+    <string name="retail">零售价（元/升）</string>
+    <string name="members">会员价（元/升）</string>
+    <string name="sales_promotion">促销信息</string>
+    <string name="news_information">新闻信息</string>
+
+    <string name="test_title">中国石化加油站</string>
+    <string name="balance">余额</string>
+    <string name="transfer_oil_card">转入油卡</string>
+    <string name="year">年份</string>
+    <string name="query">筛选</string>
+
+    <string name="test_introduce"> %1$s “美丽加油站” 为广州知名化妆品公司广州
+        欣达生物科技有限公司的旗下著名品牌，为公司的知识产权……</string>
+
+    <!--加油支付-->
+    <string name="refuel">加油金额</string>
+    <string name="user_defined">自定义</string>
+    <string name="collection">收藏</string>
+    <string name="editor">编辑</string>
+    <string name="shake_title">摇一摇</string>
+    <string name="activity_rules">活动规则：</string>
+    <string name="rules">"         花费约定的积分值，可参与摇一摇活动。若中奖，您可获得不同金额的红包或消费券或积分，祝您好运！！"</string>
+
+    <string name="transfer_come">转入</string>
+    <string name="transfer_go">转出</string>
+    <string name="hint_price">请输入金额</string>
+    <string name="test_unit_price">单价：%1$s 元</string>
+    <string name="test_pay">加油金额： %1$s 元</string>
+    <string name="test_number">加油升数： %1$s 升</string>
+    <string name="test_confirm_price">确认转入金额： %1$s 元</string>
+    <string name="test_confirm_price_out">确认转出金额： %1$s 元</string>
+
+    <string name="prompt">提示</string>
+    <string name="edit_bank">请输入您的银行卡/支付宝账号：</string>
+    <string name="edit_name">您的真实姓名</string>
+    <string name="edit_price">请输入转出的金额：</string>
+    <string name="instructions">转出金额在T+1日后到账</string>
+
+<!--    P7城市切换-->
+    <string name="s_city_change">城市切换</string>
+
+    <string name="s_frozen_money">冻结款</string>
+    <string name="s_gas_filling_card">加油卡</string>
+    <string name="s_add_gas_filling_card">新增加油卡</string>
+    <string name="s_confirm_gas_filling_card">确认信息</string>
+
+    <string name="pwSubmit">确定</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+
+
+    <string name="s_the_coupon_code">优惠券码</string>
+    <string name="s_the_coupon">优惠券</string>
+
+    <string name="s_invoice_info">开票信息</string>
+    <string name="s_invoice_personal">个人</string>
+    <string name="s_invoice_company">公司</string>
+    <string name="s_invoice_hint">请输入公司名称（个人请忽略）</string>
+
+
+    <string name="s_fuel_consumption">加油记录</string>
+    <string name="s_fuel_consumption_detail">加油消费详细</string>
+
+    <string name="s_password_settings">密码修改</string>
+    <string name="s_feedback">意见反馈</string>
+    <string name="s_share">APP分享</string>
+
+    <string name="s_about_us">关于我们</string>
+
+    <string name="s_unlogon">注销登录</string>
+
+    <string name="s_version">版本更新</string>
+
+    <string name="s_tel">客服热线：4008260970</string>
+
+    <string name="s_cancellation">您确定要注销么？</string>
+    <string name="oil_details">加油站详情</string>
+    <string name="navigation">导航</string>
+
+    <string name="map_list_title">附近列表</string>
+
+    <string name="tv_explain1">1. 借用油品时，其手续费按页面提示收取。</string>
+    <string name="tv_explain2">2. 油品借用后，直接按升数存于借用油账户内。可归还，将保证金加上卖买差额扣除相关费用后转入零钱包，可以提现。也可以按保证金加卖买差额扣除相关费用后直接转入油钱包，不能提现，只能加油支付或转入加油卡内。</string>
+    <string name="tv_explain3">3. 油品借用后的第二天开始，需按借用升数计提一定比例的借用费。</string>
+
+    <string name="instructions1">&#160;&#160;&#160;&#160;油钱包能用于加油支付或转入绑定的加油卡，不能提现。</string>
+    <string name="instructions2">&#160;&#160;&#160;&#160;零钱包能随时转入或转出（提现）。可用于各种业务的支付。</string>
+    <string name="instructions3">&#160;&#160;&#160;&#160;冻结款内的资金是用户自己的钱，但暂时被冻结，按约定时间自动转出到油钱包后才能使用。</string>
+    <string name="instructions4">&#160;&#160;&#160;&#160;预购油内记录用户历史预购油品的情况。可以转入油钱包直接加油支付或转入绑定的加油卡内，也可以退货转入零钱包后提现。</string>
+    <string name="instructions5">&#160;&#160;&#160;&#160;借用油内记录用户历史借用油品的情况。可以转入油钱包直接加油支付或转入加油卡内，也可以归还转入零钱包后提现</string>
+    <string name="instructions6">&#160;&#160;&#160;&#160;积分是用户参与各类业务所获得的奖励。积分可通过摇一摇参与摇奖活动，有可能获得不同金额的红包或消费券或积分。</string>
+
+</resources>
+

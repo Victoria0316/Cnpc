@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bluemobi.cnpc.view.RatioLayout
+        android:id="@+id/rl_info"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.bluemobi.cnpc.view.RatioLayout>
+
+    <TextView
+        android:id="@+id/tv_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_info"
+        android:textColor="@color/common_black_light"
+        android:textSize="@dimen/common_annotation_28px"
+        android:padding="@dimen/common_padding_small"
+        android:text="中国石化加油站(江南大道站)活动优惠促销"/>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info_name"
+        android:background="@drawable/line"/>
+    <TextView
+        android:id="@+id/tv_info_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:textColor="@color/common_gray"
+        android:textSize="@dimen/common_small_20px"
+        android:padding="@dimen/common_padding_small"
+        android:layout_alignParentRight="true"
+        android:text="2015-5-20"/>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info_date"
+        android:background="@drawable/line"/>
+
+</RelativeLayout>

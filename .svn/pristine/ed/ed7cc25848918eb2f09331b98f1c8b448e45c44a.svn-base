@@ -1,0 +1,317 @@
+package com.bluemobi.cnpc.activity;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Response;
+import com.bluemobi.cnpc.R;
+import com.bluemobi.cnpc.annotation.ContentView;
+import com.bluemobi.cnpc.annotation.PageName;
+import com.bluemobi.cnpc.app.CnpcApplication;
+import com.bluemobi.cnpc.app.TitleBarManager;
+import com.bluemobi.cnpc.app.UpdateChecker;
+import com.bluemobi.cnpc.base.BaseActivity;
+import com.bluemobi.cnpc.base.utils.Logger;
+import com.bluemobi.cnpc.network.request.AppShareIntegralRequest;
+import com.bluemobi.cnpc.network.request.CancellationRequest;
+import com.bluemobi.cnpc.network.response.AppShareIntegralResponse;
+import com.bluemobi.cnpc.network.response.CancellationResponse;
+import com.bluemobi.cnpc.util.Constants;
+import com.bluemobi.cnpc.util.Utils;
+import com.bluemobi.cnpc.util.WebUtils;
+import com.bluemobi.cnpc.view.AlertDialog;
+import com.bluemobi.cnpc.view.LoadingPage;
+
+import java.util.HashMap;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.PlatformActionListener;
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.sina.weibo.SinaWeibo;
+import cn.sharesdk.wechat.friends.Wechat;
+import cn.sharesdk.wechat.moments.WechatMoments;
+
+/**
+ * Created by liufy on 2015/7/28.
+ *  P10_14 设置
+ */
+@ContentView(R.layout.activity_setting)
+@PageName(R.string.set)
+public class SettingActivity extends BaseActivity implements PlatformActionListener
+{
+    private final static String tag ="SettingActivity";
+
+    @Bind(R.id.rl_modify_pwd)
+    RelativeLayout rl_modify_pwd;
+
+    @Bind(R.id.rl_feedback)
+    RelativeLayout rl_feedback;
+
+    //客服热线：400-400-400
+    @Bind(R.id.rl_phone_call)
+    RelativeLayout rl_phone_call;
+
+    @Bind(R.id.tv_phone_number)
+    TextView tv_phone_number;
+
+    @Bind(R.id.about_us)
+    RelativeLayout about_us;
+
+    @Bind(R.id.rl_cancellation)
+    RelativeLayout rl_cancellation;
+
+    @Bind(R.id.share_app)
+    RelativeLayout share_app;
+
+    //版本更新
+    @Bind(R.id.tv_version_updating)
+    RelativeLayout tv_version_updating;
+
+    private AlertDialog tipDialog;
+
+    private android.app.AlertDialog dialog;
+    private View view;
+
+
+    @Override
+    protected void initBase() {
+
+        TitleBarManager titleBarManager = new TitleBarManager();
+        titleBarManager.init(this, getSupportActionBar());
+        titleBarManager.showCommonTitleBar(R.string.set, R.drawable.return_arrow, true);
+        showLoadingPage(false);
+        ShareSDK.initSDK(this);
+
+    }
+
+    @Override
+    protected void successViewCompleted(View successView) {
+        ButterKnife.bind(this, successView);
+
+        tv_phone_number.setText("客服热线：" + Constants.PHONE);
+
+    }
+
+    @OnClick(R.id.rl_modify_pwd)
+    public void modifyPwd(){
+        Utils.moveTo(mContext, PwdModifyActivity.class);
+    }
+
+    @OnClick(R.id.rl_feedback)
+    public void feedback(){
+        Utils.moveTo(mContext, FeedBackActivity.class);
+    }
+
+
+    @OnClick(R.id.rl_phone_call)
+    public void phone_call(){
+        //用intent启动拨打电话
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + Constants.PHONE));
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.about_us)
+    public void about_us(){
+        Utils.moveTo(this, AboutUsActivity.class);
+    }
+
+    @OnClick(R.id.rl_cancellation)
+    public void rl_cancellation(){
+
+        tipDialog = new AlertDialog(this)
+                .setTitle(getString(R.string.global_tip))
+                .setMessage(getString(R.string.s_cancellation))
+                .setPositiveButtonClickListener(getString(R.string.global_sure), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Request();
+                    }
+                })
+                .setNegativeButtonClickListener(getString(R.string.cancel), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        tipDialog.dismiss();
+                    }
+                });
+        tipDialog.show();
+    }
+
+    @OnClick(R.id.tv_version_updating)
+    public void version_updating(){
+        Logger.d(tag,"版本更新");
+        checkUpDate();
+    }
+
+    private void checkUpDate() {
+        UpdateChecker.getInstance(SettingActivity.this).check(true);
+    }
+
+    @OnClick(R.id.share_app)
+    public void share_app(){
+        if(dialog == null){
+            dialog = new android.app.AlertDialog.Builder(this)
+                    .create();
+            view = LayoutInflater.from(this).inflate(R.layout.dialog_share_app, null);
+            ImageButton share_wechat =(ImageButton) view.findViewById(R.id.share_wechat);
+            ImageButton share_circle_friends =(ImageButton) view.findViewById(R.id.share_circle_friends);
+            ImageButton share_sina =(ImageButton) view.findViewById(R.id.share_sina);
+            Button cancel =(Button) view.findViewById(R.id.cancel);
+            cancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
+            });
+            share_circle_friends.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.e("pengyouquan","pengyouquan");
+                    againApp();
+                    share(2);
+                    dialog.cancel();
+                }
+            });
+            share_wechat.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.e("weixin","weixinweixinweixin");
+                    againApp();
+                    share(1);
+                    dialog.cancel();
+                }
+            });
+            share_sina.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    /*Log.e("sina","sinasinasina");
+                    share(3);
+                    againApp();*/
+                    dialog.cancel();
+                    Utils.makeToastAndShow(getBaseContext(),"正在努力开发中…");
+                }
+            });
+
+            Window window = dialog.getWindow();
+            window.setGravity(Gravity.BOTTOM);  //此处可以设置dialog显示的位置
+            window.setWindowAnimations(R.style.dialog_bottom_style);  //添加动画
+            dialog.show();
+            dialog.setContentView(view);
+        }else{
+            dialog.show();
+        }
+    }
+
+    private void againApp() {
+
+        Utils.showProgressDialog(this);
+        AppShareIntegralRequest request = new AppShareIntegralRequest(new Response.Listener<AppShareIntegralResponse>() {
+            @Override
+            public void onResponse(AppShareIntegralResponse response) {
+                Utils.closeDialog();
+                if (response != null && response.getStatus() == 0) {// success
+                    Utils.makeToastAndShow(getBaseContext(), "再送100积分");
+                }
+            }
+        },this);
+        request.setHandleCustomErr(false);
+        request.setUserId(CnpcApplication.getInstance().getmData().userId);
+        request.setType("share");
+        WebUtils.doPost(request);
+    }
+
+
+    public void share(int  i) {
+        Platform.ShareParams sp = new Platform.ShareParams();
+        sp.setTitle("「油管家」加油还能赚钱，邀你一起来！");
+        sp.setText("不仅加油享优惠，还能理财增值，快来下载吧~ ");
+        sp.setImageUrl("http://101.200.193.187:8888/Fload/cnpc/2015-09-24/9CC8F138E4954923B2804AF959CEF19A.png?id=9CC8F138E4954923B2804AF959CEF19A&fn=2015-09-24&fs=png&appkey=cnpc");
+        sp.setUrl("http://www.sydoil.com/app");
+        switch (i) {
+            case 1:
+                Platform weixin = ShareSDK.getPlatform(Wechat.NAME);
+                weixin.setPlatformActionListener(SettingActivity.this); // 设置分享事件回调
+                sp.setShareType(Platform.SHARE_WEBPAGE);
+                weixin.share(sp);
+                break;
+            case 2:
+                Platform wechatmoments = ShareSDK.getPlatform(WechatMoments.NAME);
+                wechatmoments.setPlatformActionListener(SettingActivity.this); // 设置分享事件回调
+                sp.setShareType(Platform.SHARE_WEBPAGE);
+                wechatmoments.share(sp);
+                break;
+            case 3:
+                sp.setTitleUrl("http://www.sydoil.com/app");
+                Platform qq = ShareSDK.getPlatform(SinaWeibo.NAME);
+                qq.setPlatformActionListener(SettingActivity.this); // 设置分享事件回调
+                qq.share(sp);
+                break;
+            default:
+                break;
+        }
+    }
+    private void Request() {
+        CancellationRequest request = new CancellationRequest(new Response.Listener<CancellationResponse>() {
+            @Override
+            public void onResponse(CancellationResponse response) {
+
+                Utils.closeDialog();
+                if (response != null && response.getStatus() == 0) {// success
+                    tipDialog.dismiss();
+                    Utils.moveTo(mContext,LoginActivity.class);
+                    finishAll();
+
+                } else {// failed
+                    Log.e("error", "error");
+                }
+
+            }
+        },this);
+
+        request.setUserId(CnpcApplication.getInstance().getmData().userId);
+        WebUtils.doPost(request);
+    }
+
+    @Override
+    protected LoadingPage.LoadResult load() {
+
+        return LoadingPage.LoadResult.success;
+
+    }
+
+    @Override
+    public void onCancel(Platform arg0, int arg1) {
+        // TODO Auto-generated method stub
+
+    }
+
+
+
+    @Override
+    public void onComplete(Platform arg0, int arg1, HashMap<String, Object> arg2) {
+        // TODO Auto-generated method stub
+
+    }
+
+
+
+    @Override
+    public void onError(Platform arg0, int arg1, Throwable arg2) {
+        // TODO Auto-generated method stub
+//		Toast.makeText(mContext, ""+arg1, Toast.LENGTH_SHORT).show();
+        Log.e("error","errorrrrr");
+    }
+
+}

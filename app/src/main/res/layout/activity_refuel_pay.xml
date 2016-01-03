@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_item_bg"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle">
+
+
+        <ImageView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_position" />
+
+        <TextView
+            android:id="@+id/tv_gasdeptName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:layout_toRightOf="@id/tv_left"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_TitleLeft_30px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_padding_big"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s_product_selection"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_title_template_26px" />
+
+        <TextView
+            android:id="@+id/test_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/test_unit_price"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_title_template_26px" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:cacheColorHint="@color/common_transparent"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@drawable/selector_radio_border"
+        android:numColumns="4"
+        android:imeOptions="actionDone"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_padding_big"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:text="@string/refuel"
+        android:textColor="@color/common_black_light"
+        android:textSize="@dimen/common_title_template_26px" />
+
+    <GridView
+         android:id="@+id/gridview_price"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/common_margin"
+         android:layout_marginRight="@dimen/common_margin"
+         android:cacheColorHint="@color/common_transparent"
+         android:horizontalSpacing="10dp"
+         android:listSelector="@drawable/selector_radio_border"
+         android:numColumns="3"
+         android:verticalSpacing="10dp">
+
+     </GridView>
+
+
+    <!--    <EditText
+            android:id="@+id/val"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/item_sel"
+            android:text="100"
+            android:textColorHint="@color/common_black"
+            android:phoneNumber="true"
+            android:inputType="number">
+        </EditText>-->
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_padding_middle"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle">
+
+        <TextView
+            android:id="@+id/test_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_pay"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_title_template_26px" />
+
+        <TextView
+            android:id="@+id/test_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/test_number"
+            android:textColor="@color/common_black_light"
+            android:textSize="@dimen/common_title_template_26px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:textColor="@color/text"
+        android:textSize="@dimen/common_small_20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/common_padding_middle"
+        android:layout_marginRight="@dimen/common_padding_middle">
+
+        <Button
+            android:id="@+id/common_confirm"
+            style="@style/ButtonBlue"
+            android:layout_gravity="bottom"
+            android:text="@string/common_confirm" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

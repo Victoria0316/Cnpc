@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_all_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/common_padding_middle"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingTop="@dimen/common_padding_middle"
+        android:text="所有城市"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+    <TextView
+
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_all_city"
+        android:layout_centerVertical="true"
+        android:background="@drawable/common_item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:text="New Text"
+        android:textColor="@color/common_black_light"
+        android:textSize="@dimen/common_TitleLeft_30px" />
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_item_bg"
+        android:paddingLeft="@dimen/common_padding_middle"
+        android:paddingRight="@dimen/common_padding_middle"
+        android:paddingTop="@dimen/common_padding_middle">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国石化加油站（浦沿路）"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_TitleLeft_30px"/>
+
+        <TextView
+            android:id="@+id/tv_cooperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合作"
+            android:layout_marginLeft="@dimen/common_margin_little"
+            android:layout_toRightOf="@id/address"
+            android:gravity="center"
+            android:background="@drawable/cooperation_bg"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_small_20px"/>
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导航"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_bottom_small_22px"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/navi"
+            android:drawablePadding="@dimen/common_padding_small"/>
+
+        <LinearLayout
+            android:id="@+id/detailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:layout_toLeftOf="@+id/details"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:text="7.2km"
+                android:textColor="@color/common_text_hint"
+                android:textSize="@dimen/common_small_20px"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vertica_small"
+                android:layout_marginLeft="@dimen/common_padding_small"
+                android:layout_marginRight="@dimen/common_padding_small"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:textColor="@color/common_text_hint"
+                android:textSize="@dimen/common_small_20px"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/the_divider"
+            style="@style/the_divider"
+            android:layout_below="@id/detailed"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:layout_marginBottom="@dimen/common_padding_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Login_left"
+            android:orientation="horizontal"
+            android:layout_below="@id/the_divider"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_oil1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_toLeftOf="@+id/model"/>
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/common_title_symbol_16px"
+                    android:textColor="@color/common_black_light"
+                    android:gravity="top"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_oil_model1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_padding_small"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vertica_big"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_oil2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/model2"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/model2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/common_title_symbol_16px"
+                    android:textColor="@color/common_black_light"
+                    android:gravity="top"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_oil_model2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model2"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_padding_small"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vertica_big"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_oil3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/model3"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/model3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/common_title_symbol_16px"
+                    android:textColor="@color/common_black_light"
+                    android:gravity="top"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_oil_model3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model3"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_padding_small"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vertica_big"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_oil4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/model4"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/model4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/common_title_symbol_16px"
+                    android:textColor="@color/common_black_light"
+                    android:gravity="top"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_oil_model4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/model4"
+                    android:text=""
+                    android:textSize="@dimen/common_bottom_small_22px"
+                    android:textColor="@color/common_black_light"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_padding_small"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

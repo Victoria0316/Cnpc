@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_vehicle_edit_item_h"
+        android:background="@drawable/common_item_bg">
+
+        <TextView
+            android:id="@+id/balance_label"
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:text="@string/integral" />
+
+        <TextView
+            android:id="@+id/balance_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/balance_label"
+            android:textSize="@dimen/common_blue_border_28px"
+            android:textColor="@color/common_red"
+
+            android:text="5000"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrap"
+        android:background="@drawable/line" />
+
+
+    <ImageView
+        android:id="@+id/iv_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_line4"
+        android:layout_marginTop="@dimen/common_padding_middle"
+
+        android:background="@drawable/line" />
+
+    <com.bluemobi.cnpc.view.CustomSpinnerOption
+        android:id="@+id/cso_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_line1"
+        android:background="@drawable/common_item_bg"
+        android:hint="2015"
+        android:text="年份">
+
+    </com.bluemobi.cnpc.view.CustomSpinnerOption>
+
+    <ImageView
+        android:id="@+id/iv_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cso_spinner"
+        android:background="@drawable/line" />
+
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cso_spinner"
+        android:layout_marginTop="@dimen/common_padding_middle"
+        android:background="@drawable/line" />
+
+    <com.bluemobi.cnpc.view.CustomSpinnerOption
+        android:id="@+id/cso_spinner_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_line"
+        android:background="@drawable/common_item_bg"
+        android:hint="已转明细"
+        android:text="筛选"></com.bluemobi.cnpc.view.CustomSpinnerOption>
+
+    <ImageView
+        android:id="@+id/iv_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cso_spinner_select"
+        android:background="@drawable/line" />
+
+
+    <com.bluemobi.cnpc.view.CnpcStatementsView
+        android:id="@+id/statements"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_line2">
+
+    </com.bluemobi.cnpc.view.CnpcStatementsView>
+
+
+</RelativeLayout>

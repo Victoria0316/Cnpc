@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:background="@drawable/dialog_bg">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_bottom_big_34px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_padding_middle"/>
+
+        <TextView
+            android:id="@+id/transfer_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_annotation_28px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:id="@+id/existing_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_annotation_28px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/transfer_into"
+            android:layout_marginTop="@dimen/common_padding_small"/>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:gravity="center"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/common_annotation_28px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_padding_middle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/common_padding_middle"/>
+        
+        
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
